@@ -1,0 +1,2730 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+		
+	
+	
+	
+	
+	
+	
+	
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+
+	
+
+	
+
+	<title>스타포스트>아티스트 랭킹>멜론</title>
+	<meta name="keywords" content="음악서비스, 멜론차트, 멜론TOP100, 최신음악, 인기가요, 뮤직비디오, 앨범, 플레이어, 스트리밍, 다운로드, 아티스트플러스, 아티스트채널" />
+	<meta name="description" content="국내 최다 4,000만곡 보유, No.1 뮤직플랫폼 멜론! 최신 트렌드부터 나를 아는 똑똑한 음악추천까지!" />
+	<meta name="naver-site-verification" content="e2b43191afa0f1d2deb8e2cda8f45ee1408c44a1"/>
+	<meta name="google-site-verification" content="5IbZkQIBKFswwVZeAGJ2Fx3kg6aF8RTAGEU6wlsOWLk" />
+	<meta property="fb:app_id" content="357952407588971"/>
+	<meta property="og:title" content="Melon"/>
+	<meta property="og:image" content="https://cdnimg.melon.co.kr/resource/image/web/common/logo_melon142x99.png"/>
+	<meta property="og:description" content="음악이 필요한 순간, 멜론"/>
+	<meta property="og:url" content="http://www.melon.com/artistplus/artistchart/index.htm?chartGubunCode=MS0000"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:site_name" content="멜론"/>
+	<meta name="viewport" content="width=device-width"/>
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?2" id="favicon"/>
+	
+		
+		
+		
+		
+		
+	
+
+	
+	
+	
+
+	
+	<link rel="stylesheet" href="https://cdnimg.melon.co.kr/static/web/resource/style/w1/ys/9/ny588mixlj.css" type="text/css" />
+	<link rel="stylesheet" href="https://cdnimg.melon.co.kr/static/web/resource/style/w1/ri/4/rw98ltzfrqdnf.css" type="text/css" />
+
+
+	<!-- 댓글 css 파일 네임 변경 -->
+    <link rel="stylesheet" href="https://cdnimg.melon.co.kr/static/web/resource/style/w1/15/h/rx422iafcc61.css" type="text/css" /> 
+  	
+  		
+  		
+			<link rel="stylesheet" href="/resource/style/web/artistplus/melonweb_artistplus.css" type="text/css" />
+  		
+  	
+  	
+	
+	
+	<script type="text/javascript" src="/resource/script/web/common/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="https://member.melon.com/resource/script/web/member/melonweb_member_external.js?tm=20211129"></script>
+	<script type="text/javascript" src="https://cdnimg.melon.co.kr/static/web/resource/script/w1/ei/s/lqtorqn28.js"></script> 
+	<script type="text/javascript">
+	(function() {
+		WEBPOCIMG = {
+			defaultImg : function(obj, width){
+				if(width == null || width == '') width = $(obj).width();
+				if(width == 0) width = 500;
+				var thumbType = "_500";
+				//가장 큰사이즈로 리사이즈함
+				var thumbType = "_500";
+				var defaultImg = "//cdnimg.melon.co.kr/resource/image/web/default/noAlbum" + thumbType + "_160727.jpg/melon/resize/" + width;
+				if(obj.src != defaultImg){
+					obj.src = defaultImg;
+				}
+			},
+
+			defaultAlbumImg : function(obj, width){
+				if(width == null || width == '') width = $(obj).width();
+				if(width == 0) width = 500;
+				//가장 큰사이즈로 리사이즈함
+				var thumbType = "_500";
+				var defaultImg = "//cdnimg.melon.co.kr/resource/image/web/default/noAlbum" + thumbType + "_160727.jpg/melon/resize/" + width;
+				if(obj.src != defaultImg){
+					obj.src = defaultImg;
+				}
+			},
+
+			defaultArtistImg : function(obj, width){
+				if(width == null || width == '') width = $(obj).width();
+				if(width == 0) width = 300;
+				//가장 큰사이즈로 리사이즈함
+				var thumbType = "_300";
+				var defaultImg = "//cdnimg.melon.co.kr/resource/image/web/default/noArtist" + thumbType + "_160727.jpg/melon/resize/" + width;
+				if(obj.src != defaultImg){
+					obj.src = defaultImg;
+				}
+			},
+			defaultDjImg : function(obj){
+			},
+			defaultMvImg : function(obj, width, height){
+				if(width == null || width == '') width = $(obj).width();
+				if(height == null || height == '') height = $(obj).height();
+
+				var ratio43 = Math.floor((4/3)*10)/10;
+				var ratio169 = Math.floor((16/9)*10)/10;
+				var ratioObj = Math.floor((width/height)*10)/10;
+
+				var ratio = "4x3";
+				if(ratioObj == ratio43){
+					ratio = "4x3"; //contentsType = "mv43";
+				} else if(ratioObj == ratio169){
+					ratio = "16x9"; //contentsType = "mv169";
+				} else {
+					if(ratioObj > 1.5) ratio = "16x9";
+					else ratio = "4x3";
+				}
+
+				if(width == 0) width = 640;
+				if(height == 0) ratio = "16x9";
+
+				//가장 큰사이즈로 리사이즈함
+				var thumbType = "_" + ratio + "_640";
+				var defaultImg = "//cdnimg.melon.co.kr/resource/image/web/default/noMovie" + thumbType + "_160727.jpg/melon/resize/" + width;
+				if(obj.src != defaultImg){
+					obj.src = defaultImg;
+				}
+			},
+			defaultPlaylistImg : function(obj, width){
+				if(width == null || width == '') width = $(obj).width();
+				if(width == 0) width = 500;
+				//가장 큰사이즈로 리사이즈함
+				var thumbType = "_500";
+				var defaultImg = "//cdnimg.melon.co.kr/resource/image/web/default/noAlbum" + thumbType + "_160727.jpg/melon/resize/" + width;
+				if(obj.src != defaultImg){
+					obj.src = defaultImg;
+				}
+			},
+			defaultMemberImg : function(obj, width){
+				if(width == null || width == '') width = $(obj).width();
+				if(width == 0) width = 300;
+				//가장 큰사이즈로 리사이즈함
+				var thumbType = "_300";
+				var defaultImg = "//cdnimg.melon.co.kr/resource/image/web/default/noArtist" + thumbType + "_160727.jpg/melon/resize/" + width;
+				if(obj.src != defaultImg){
+					obj.src = defaultImg;
+				}
+			},
+			defaultPhotoImg : function(obj, width){
+				if(width == null || width == '') width = $(obj).width();
+				if(width == 0) width = 500;
+				//가장 큰사이즈로 리사이즈함
+				var thumbType = "_500";
+				var defaultImg = "//cdnimg.melon.co.kr/resource/image/web/default/noAlbum" + thumbType + "_160727.jpg/melon/resize/" + width;
+				if(obj.src != defaultImg){
+					obj.src = defaultImg;
+				}
+			},
+			defaultShopImg : function(obj, width){
+				if(width == null || width == '') width = $(obj).width();
+				if(width == 0) width = 256;
+				//가장 큰사이즈로 리사이즈함
+				var thumbType = "_256";
+				var defaultImg = "//cdnimg.melon.co.kr/resource/image/web/default/noProduct" + thumbType + "_160727.jpg/melon/resize/" + width;
+				if(obj.src != defaultImg){
+					obj.src = defaultImg;
+				}
+			},
+			defaultShowwingImg : function(obj, width){
+				if(width == null || width == '') width = $(obj).width();
+
+				var thumbType = "_256";
+				if(width > 0 && width <= 300){
+					thumbType = "_256";
+				} else {
+					thumbType = "_313";//추후 조절값
+				}
+				var altSrc = "//cdnimg.melon.co.kr/resource/image/web/default/noShowing" + thumbType + ".jpg";
+				if(obj.src != altSrc){
+					obj.src = altSrc;
+				}
+			},
+			defaultTicketImg : function(obj, width){
+				if(width == null || width == '') width = $(obj).width();
+
+				var thumbType = "_256";
+				if(width > 0 && width <= 300){
+					thumbType = "_256";
+				} else {
+					thumbType = "_313";//추후 조절값
+				}
+				var altSrc = "//cdnimg.melon.co.kr/resource/image/web/default/noTicket" + thumbType + ".png";
+				if(obj.src != altSrc){
+					obj.src = altSrc;
+				}
+			},
+			defaultSmartRadioImg : function(obj, width){
+				if(width == null || width == '') width = $(obj).width();
+				var defaultImg = "//cdnimg.melon.co.kr/resource/image/web/default/noSmartradio_59_160727.jpg/melon/resize/" + width;
+				if(obj.src != defaultImg){
+					obj.src = defaultImg;
+				}
+			},
+			defaultConcertImg : function(obj, width){
+				if(width == null || width == '') width = $(obj).width();
+				var defaultImg = "//cdnimg.melon.co.kr/resource/image/web/default/noAlbum_114_160727.jpg/melon/resize/" + width;
+				if(obj.src != defaultImg){
+					obj.src = defaultImg;
+				}
+			}
+		}
+		,WEBELLIPSIS = {
+			ellipsis : function(ellipsisName,moreClassName,eWidth){
+		        //아티스트 더보기
+		        var arObj = $('.' + ellipsisName);
+		        for(var i = 0; i < arObj.length; i++){
+		            if (arObj.eq(i).width() > eWidth ){
+		                arObj.eq(i).parent().parent().parent().find('.' + moreClassName).show();
+		            }
+		        }
+			}
+		}
+	})();
+	</script>
+
+</head>
+<body>
+<div id="wrap">
+	<div id="skip_nav">skip navigation
+		<ul>
+			<li><a href="#gnb_menu">메뉴</a></li>
+			<li><a href="#conts_section">본문</a></li>
+			<li><a href="#footer">하단 정보</a></li>
+		</ul>
+	</div>
+
+	<!--  header -->
+	
+	<div id="header" class="gnb2_expn">
+		<div id="header_wrap" class="my_fold">  <!-- 1024이상 마이영역 접었을때 클래스 my_fold 추가 -->
+			<div id="gnb" class="clfix">
+				<!-- 상단 빠른 메뉴 -->
+				<div id="util_menu">
+					<p class="none">상단 빠른 메뉴</p>
+					<div class="top_left">
+						<ul class="clfix">
+							
+							<li class="first_child d_melon_ticket"><a href="https://ticket.melon.com/main/index.htm" title="멜론 티켓" class="menu01 mlog" data="LOG_PRT_CODE=1&MENU_PRT_CODE=0&MENU_ID_LV1=&CLICK_AREA_PRT_CODE=V08&ACTION_AF_CLICK=V1"><span>멜론 티켓</span></a></li>
+						</ul>
+					</div>
+					<!-- 140603_수정 -->
+					<div class="top_right ">
+						<ul class="clfix">
+							
+							<li class="first_child"><a href="/commerce/pamphlet/web/sale_listMainView.htm" title="이용권구매" class="menu01 mlog" data="LOG_PRT_CODE=1&MENU_PRT_CODE=0&MENU_ID_LV1=&CLICK_AREA_PRT_CODE=B01&ACTION_AF_CLICK=V1"><span>이용권구매</span></a></li>
+							
+							<li><a href="/event/vip/index.htm" title="멜론혜택관" class="menu02 mlog" data="LOG_PRT_CODE=1&MENU_PRT_CODE=0&MENU_ID_LV1=&CLICK_AREA_PRT_CODE=V06&ACTION_AF_CLICK=V1"><span>멜론혜택관</span></a></li>
+							
+							<li><a href="/event/index.htm" title="이벤트" class="menu03 mlog" data="LOG_PRT_CODE=1&MENU_PRT_CODE=0&MENU_ID_LV1=&CLICK_AREA_PRT_CODE=B03&ACTION_AF_CLICK=V1"><span>이벤트</span></a></li>
+							
+							<li class="last_child"><a href="//www.melon.com/customer/announce/index.htm" title="공지사항" class="menu04 mlog" data="LOG_PRT_CODE=1&MENU_PRT_CODE=0&MENU_ID_LV1=&CLICK_AREA_PRT_CODE=V02&ACTION_AF_CLICK=V1"><span>공지사항</span></a></li>
+						</ul>
+
+						<script type="text/javascript">
+							var html = '';
+							var logoutReturnUrl = window.location.href;
+
+							if(logoutReturnUrl == ''){
+								logoutReturnUrl = 'www.melon.com';
+							}
+
+							if(isMelonLogin()){
+								var memId = getDisplayId();
+								if(memId.indexOf("@") != -1 && getMemberType() != '1'){//카카오계정이 아닌경우에만 @도메인 영역 삭제처리
+									memId = memId.split("@")[0];
+								}
+
+								var fromMPS = getCookie("MPS"); // 멜론 플레이어에서 왔는지 확인.
+								var fromMPSYn = fromMPS == null || fromMPS.indexOf("MELONPLAYER") < 0;
+
+								var gradeImg = "";
+								var gradeName = "";
+								var gradeImageUrl = "";
+
+								//alert("gradeName : " + getGrade() + " & gradeImageUrl :" + getGradeImageUrl());
+
+								try {
+									gradeName = getGrade();
+									gradeImageUrl = getGradeImageUrl();
+									gradeImageUrl = gradeImageUrl.replace('http:','');
+
+									if(gradeImageUrl != ''){
+										gradeImg = "<span class=\"icon_logon\"><img src=\""+gradeImageUrl+"\" width=\"18\" height=\"18\" alt=\""+gradeName+"\" /></span>";
+									}
+									//카카오연동확인
+									if(getMemberType() == '1'){
+										gradeImg += '<span class="icon_logon"><img src="//cdnimg.melon.co.kr/resource/image/web/common/icon_kakao.png" width="18" height="18" alt="kakao"></span>';
+									}
+								} catch (e) {}
+
+								var logoutButtonHtml = '<button type="button" title="로그아웃" class="btn_top_logout" onclick="javascript:logout(\'\',\''+logoutReturnUrl+'\');"><img src="//cdnimg.melon.co.kr/resource/image/web/common/btn_top_logout.png" width="44" height="12" alt="로그아웃"></button>';
+
+								html = ['<div class="header_login">',
+									' <span class="icon_grade">',
+									'' + gradeImg + '',
+									' </span>',
+									' <span class="wrap_id"><a href="javascript:location.href=_getHttpsMemberDomain()+ \'/muid/web/help/myinfointro_inform.htm\';" class="user_id"><strong>' + memId + '</strong></a> 님</span>',
+									fromMPSYn ? logoutButtonHtml : '', //멜론 플레이어에서 로그아웃 싱크 안맞는 이슈로 인해 로그아웃 멜론 플레이어에서 왔을 시 버튼 제거
+									'</div>'
+								].join('');
+								document.write(html);
+							}
+						</script>
+
+					</div>
+					<!-- //140603_수정 -->
+				</div>
+				<!-- //상단 빠른 메뉴 -->
+
+				<!-- 140603_수정 -->
+				
+				<h1><a href="//www.melon.com/index.htm" title="MelOn 로고 - 홈으로 이동" class="mlog" data="LOG_PRT_CODE=1&MENU_PRT_CODE=0&MENU_ID_LV1=&CLICK_AREA_PRT_CODE=M01&ACTION_AF_CLICK=V1"><img width="142" height="99" src="https://cdnimg.melon.co.kr/resource/image/web/common/logo_melon142x99.png" alt="Melon"/></a></h1>
+
+				<!-- //140603_수정 -->
+				<!-- 통합검색 영역 -->
+				<fieldset>
+					<legend>통합검색영역</legend>
+					<input type="text" title="검색 입력 편집창" placeholder="" name="" id="top_search" style="width:249px" onkeypress="if(event.keyCode == 13){goSearch();}"/><input type="hidden" name="keywordLink" id="keywordLink" value="" />
+					<button type="button" style="display: none;" id="top_search_autocomplete_toggle" class="btn_icon btn_auto close" title="자동검색 펼침"><span class="odd_span">자동검색 펼침</span></button> <!-- open/close 클래스 사용 -->
+					<button type="button" class="btn_icon search_m" title="검색"><span class="odd_span">검색</span></button>
+					<div class="auto_complete" id="top_search_autocomplete"><div class="auto_complete_cont" style="display:block;"><!-- 자동완성 레이어 --></div></div>
+					<div class="auto_complete" id="top_search_autocomplete_template" style="display: none;"> <!-- 자동완성 레이어 템플릿 -->
+						<!-- 텍스트 결과 -->
+						<ul class="text_result">
+							<li><a href="#" class="autocomplete-label"></a></li>
+						</ul>
+						<!-- 섬네일 결과 -->
+						<ul class="thumb_result">
+							<li class="cate"></li>
+							<li class="class02">
+								<a href="#">
+									<span class="thumb_40">
+										<span class="thumb_frame"></span>
+										<img class="autocomplete-img" width="40" height="40" alt="">
+									</span>
+									<div class="info">
+										<span class="autocomplete-label"></span><br/>
+										<span><span class="f11 autocomplete-info"></span></span>
+									</div>
+								</a>
+							</li>
+						</ul>
+						<!-- 검색어가 없을 때 -->
+						<ul class="text_result">
+							<li class="result_none">
+								<span>해당글자로 시작하는 단어가 없습니다.</span>
+							</li>
+						</ul>
+					</div>
+				</fieldset>
+				<form style="display: none" id="searchFrm" method="get" action="">
+					<input type="hidden" name="q"/>
+					<input type="hidden" name="section"/>
+				</form>
+				<!-- //통합검색 영역 -->
+
+				<!-- 실시간 검색어 -->
+				<div class="realtime_soar_keyword">
+					<!-- 140519_수정 -->
+					<a href="#none" class="title">급상승 키워드</a>
+					<!-- //140519_수정 -->
+					<div class="keyword_overlay">
+						<ol style="overflow:hidden; height:20px;">
+						</ol>
+						<!-- 140423_추가 -->
+						
+						<!-- //140423_추가 -->
+					</div>
+				</div>
+				<!-- //실시간 검색어 -->
+
+				<!-- 배너 영역 -->
+				<div class="cmn_banner"></div>
+			</div>
+            <!-- 140314_gnb마크업 수정 -->
+			<div id="gnb_menu">
+				<ul>
+					<li class="nth1">
+						
+						<a href="//www.melon.com/chart/index.htm" class="cur_menu mlog" data="LOG_PRT_CODE=1&MENU_PRT_CODE=0&MENU_ID_LV1=&CLICK_AREA_PRT_CODE=R01&ACTION_AF_CLICK=V1"><span class="cur_status none">현재 선택된 메뉴-</span><span class="menu_bg menu01">멜론차트</span></a>
+						<div class="lay_menu">
+							<ul>
+								<li class="first_child"><a href="//www.melon.com/chart/index.htm"><span class="menu_chart m1">TOP100</span></a></li>
+								<li class=""><a href="//www.melon.com/chart/day/index.htm"><span class="menu_chart m2">일간</span></a></li>
+								<li class=""><a href="//www.melon.com/chart/week/index.htm"><span class="menu_chart m3">주간</span></a></li>
+								<li class=""><a href="//www.melon.com/chart/month/index.htm"><span class="menu_chart m4">월간</span></a></li>
+								<li class=""><a href="//www.melon.com/chart/age/index.htm"><span class="menu_chart m5">시대</span></a></li>
+							</ul>
+							<div class="chart_finder">
+								<button type="button" class="btn_chart_f" onclick="location.href='//www.melon.com/chart/search/index.htm'"><span class="odd_span">차트 파인더</span></button>
+							</div>
+						</div>
+					</li>
+					<li class="nth2">
+						
+						<a href="//www.melon.com/new/index.htm" class="cur_menu mlog" data="LOG_PRT_CODE=1&MENU_PRT_CODE=0&MENU_ID_LV1=&CLICK_AREA_PRT_CODE=C01&ACTION_AF_CLICK=V1"><span class="cur_status none">현재 선택된 메뉴-</span><span class="menu_bg menu02 ">최신 음악</span></a>
+						<div class="lay_menu">
+							<ul>
+								<li class="first_child"><a href="//www.melon.com/new/index.htm"><span class="menu_new m1">최신곡</span></a></li>
+								<li class=""><a href="//www.melon.com/new/album/index.htm"><span class="menu_new m2">최신앨범</span></a></li>
+								<li class=""><a href="//www.melon.com/new/mv/index.htm"><span class="menu_new m3">최신 뮤직비디오</span></a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="nth3">
+						
+						<a href="//www.melon.com/genre/song_list.htm?gnrCode=GN0100" class="cur_menu mlog" data="LOG_PRT_CODE=1&MENU_PRT_CODE=0&MENU_ID_LV1=&CLICK_AREA_PRT_CODE=C03&ACTION_AF_CLICK=V1"><span class="cur_status none">현재 선택된 메뉴-</span><span class="menu_bg menu03">장르 음악</span></a>
+						<div class="lay_menu">
+							<ul>
+								<li class="first_child"><a href="//www.melon.com/genre/song_list.htm?gnrCode=GN0100"><span class="menu_gnr nm1">한국대중음악</span></a></li>
+								<li class=""><a href="//www.melon.com/genre/song_list.htm?gnrCode=GN0900"><span class="menu_gnr nm2">해외POP음악</span></a></li>
+								<li class=""><a href="//www.melon.com/genre/song_list.htm?gnrCode=GN1500"><span class="menu_gnr nm3">그외 인기장르</span></a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="nth4">
+						
+						<a href="//www.melon.com/dj/today/djtoday_list.htm" class="cur_menu mlog" data="LOG_PRT_CODE=1&MENU_PRT_CODE=0&MENU_ID_LV1=&CLICK_AREA_PRT_CODE=S04&ACTION_AF_CLICK=V1"><span class="cur_status none">현재 선택된 메뉴-</span><span class="menu_bg menu04">멜론DJ</span></a>
+						<div class="lay_menu">
+							<ul>
+								<li class="first_child"><a href="//www.melon.com/dj/today/djtoday_list.htm"><span class="menu_dj m1">오늘은 뭘 듣지</span></a></li>
+								<li class=""><a href="//www.melon.com/dj/essential/djessential_list.htm"><span class="menu_dj m2">전문가 선곡</span></a></li>
+								<li class=""><a href="//www.melon.com/dj/themegenre/djthemegenre_list.htm"><span class="menu_dj m3">#테마장르</span></a></li>
+								<li class=""><a href="//www.melon.com/dj/powerdj/djpowerdj_list.htm"><span class="menu_dj m4">파워DJ</span></a></li>
+								<li class=""><a href="//www.melon.com/dj/chart/djchart_list.htm"><span class="menu_dj m5">인기</span></a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="nth5">
+						
+						<a href="//www.melon.com/tv/index.htm" class="cur_menu mlog" data="LOG_PRT_CODE=1&MENU_PRT_CODE=0&MENU_ID_LV1=&CLICK_AREA_PRT_CODE=S05&ACTION_AF_CLICK=V1"><span class="cur_status none">현재 선택된 메뉴-</span><span class="menu_bg menu05">멜론TV</span></a>
+						<div class="lay_menu">
+							<ul>
+								<li class="first_child"><a href="//www.melon.com/tv/index.htm"><span class="menu_tv m1">오늘은 뭘 볼까</span></a></li>
+								<li class=""><a href="//www.melon.com/tv/mv/index.htm"><span class="menu_tv m2">뮤직비디오</span></a></li>
+								<li class=""><a href="//www.melon.com/tv/menu/index.htm?menuSeq=1"><span class="menu_tv m3">멜론 오리지널</span></a></li>
+								<li class=""><a href="//www.melon.com/tv/menu/index.htm?menuSeq=4"><span class="menu_tv m4">아티스트 업데이트</span></a></li>
+								<li class=""><a href="//www.melon.com/tv/menu/index.htm?menuSeq=3"><span class="menu_tv m5">방송</span></a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="nth6 on">
+						
+						<a href="//www.melon.com/artistplus/todayupdate/index.htm" class="cur_menu mlog" data="LOG_PRT_CODE=1&MENU_PRT_CODE=0&MENU_ID_LV1=&CLICK_AREA_PRT_CODE=S07&ACTION_AF_CLICK=V1"><span class="cur_status none">현재 선택된 메뉴-</span><span class="menu_bg menu06">스타포스트</span></a>
+						<div class="lay_menu">
+							<ul>
+								<li class="first_child"><a href="//www.melon.com/artistplus/todayupdate/index.htm"><span class="menu_arti m1">NOW</span></a></li>
+								<li class="on"><a href="//www.melon.com/artistplus/artistchart/index.htm"><span class="menu_arti m3">아티스트 랭킹</span></a></li>
+								<li class=""><a href="//www.melon.com/artistplus/myranking/index.htm"><span class="menu_arti m4">마이 랭킹</span></a></li>
+							</ul>
+							<div class="menu_artist_btn">
+	                            <div class="artist_fan">
+	                                <button type="button" class="btn_fan" onclick="MELON.WEBSVC.POC.menu.goMyMusicFanSignArtist();"><span class="odd_span">팬맺은 아티스트</span></button>
+	                            </div>
+	                            <div class="artist_finder">
+	                                <button type="button" class="btn_artist_f" onclick="location.href='//www.melon.com/artistplus/finder/index.htm'"><span class="odd_span">아티스트 파인더</span></button>
+	                            </div>
+							</div>
+						</div>
+					</li>
+					<!-- 160314 수정 -->
+					<li class="nth7">
+						
+						<a href="//www.melon.com/musicstory/today/index.htm" class="cur_menu mlog" data="LOG_PRT_CODE=1&MENU_PRT_CODE=0&MENU_ID_LV1=&CLICK_AREA_PRT_CODE=S09&ACTION_AF_CLICK=V1"><span class="cur_status none">현재 선택된 메뉴-</span><span class="menu_bg menu07">매거진</span></a>
+					</li>
+					<!-- // 160314 수정 -->
+					<li class="nth8">
+						
+						<a href="//www.melon.com/mma/home.htm" class="cur_menu mlog" data="LOG_PRT_CODE=1&MENU_PRT_CODE=0&MENU_ID_LV1=&CLICK_AREA_PRT_CODE=S11&ACTION_AF_CLICK=V1"><span class="cur_status none">현재 선택된 메뉴-</span><span class="menu_bg menu08">뮤직어워드</span></a>
+					</li>
+
+					<li class="nth10 last_child ">
+						
+						<a href="//www.melon.com/edu/index.htm" data="LOG_PRT_CODE=1&MENU_PRT_CODE=0&MENU_ID_LV1=&CLICK_AREA_PRT_CODE=C04&ACTION_AF_CLICK=V1" class="cur_menu mlog"><span class="cur_status none">현재 선택된 메뉴-</span><span class="menu_bg menu10">어학</span></a>
+					</li>
+
+				</ul>
+				<ul class="sub_gnb">
+					<li class="">
+						
+						<a href="javascript:MELON.WEBSVC.POC.menu.goMyMusicMain();" class="cur_menu mlog" data="LOG_PRT_CODE=1&MENU_PRT_CODE=0&MENU_ID_LV1=&CLICK_AREA_PRT_CODE=S01&ACTION_AF_CLICK=V1"><span class="cur_status none">현재 선택된 메뉴-</span><span class="menu_bg menu09">마이뮤직</span></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- //header -->
+
+	<div id="cont_wrap" class="clfix">
+		<div id="conts_section" class="my_fold">
+			<!-- contents -->
+			
+
+		<!-- ▼▼▼contents▼▼▼  -->
+		<div id="conts" class="right_top_chart">
+			<div class="f_tit">
+				<h2 class="artist_chart_tit">아티스트 랭킹 아티스트에 대한 전체 이용량을 하루 단위로 집계한 순위차트입니다. </h2>
+				<button class="btn btn_small02 arrow" type="button" data-control="dropdown" data-dropdown-target="#dropdown02"><span class="odd_span"><span class="even_span">아티스트 차트 기준 자세히 보기 <span class="icon"></span></span></span></button>
+				<div class="l_popup chart_guide" id="dropdown02" role="dialog" style="right:0px; top:33px; width:550px; display:none;">
+					<div class="l_cntt">
+						<div class="artistplus_guide">
+							<h5 class="artist_rank">지금, 어떤 아티스트가 대세일까? 아티스트 랭킹 자세히 보기</h5><!-- 140616_수정 aty -->
+							<dl class="detail_point">
+								<dt><span class="icon type01"></span>집계시간</dt>
+								<dd>
+									전일 00시~ 23시 59분 (차트 업데이트는 매일 오후 12시)
+								</dd>
+								<dt><span class="icon type02"></span>집계기준</dt>
+								<dd>
+									아티스트 관련 모든 항목에 대한 이용량
+									<ul class="c_list">
+										<li><strong>음원</strong> 해당 아티스트의 모든 음원에 대한 스트리밍, 다운로드 이용자수</li>
+										<li><strong>팬증가수</strong> 새롭게 팬맺기 한 숫자</li>
+										<li><strong>좋아요</strong> 모든 컨텐츠 좋아요 수 합</li>
+										<li><strong>포토</strong> 포토 감상자수</li>
+										<li><strong>비디오</strong> 비디오 감상자수</li>
+										<!-- <li><strong>톡</strong> 아티스트의 팬 활동수, 추후 추가 예정</li> -->
+									</ul>
+								</dd>
+								<dt><span class="icon type03"></span>TOP5 아티스트 점유율</dt>
+								<dd>
+									1위~10위에 오른 아티스트 이용량 중 TOP5 아티스트에 대한 이용량이 차지하는 비율
+								</dd>
+								<dt><span class="icon type04"></span>세부점수</dt>
+								<dd>
+									아티스트에 대한 이용량을 5항목으로 분류한 후, 각 항목을 10점 만점의 표준 점수로 환산한 점수. 점수가 높은 항목은 집계기간 동안 타 아티스트 대비 이용량이 많은 항목이라고 볼 수 있습니다. <br /><br />
+									세부점수는<strong> 사용량에 따른 가중치를 제외한 점수</strong>이며, <br /> 순위 선정 시에는 음원 점수에 x4, 팬증가수 점수에 x2의 가중치를 부여합니다.  <br /> (항목별 사용자수의 차이를 반영하여 정확한 랭킹 산출을 위해 가중치를 부여하며,<br /> 가중치는 서비스 사용량변화에 따라 추후 변경될 수 있습니다.)
+								</dd>
+							</dl>
+							<dl class="detail_point02">
+								<dt>잠깐! 세부점수 5개를 합한 숫자가 더 높은데 순위가 낮다면?</dt>
+								<dd>아티스트 랭킹에 반영되는 최종 점수에는 가중치가 반영되므로, 음원점수에 4, 팬증가수 점수에 2를 곱한 것이 최종 점수가 되어 표준점수의 합으로 비교한 순위와 실제 순위가 다를 수 있습니다.</dd>
+							</dl>
+						</div>
+					</div>
+					<button type="button" class="btn_close"><span class="odd_span">닫기</span></button>
+					<span class="bullet_top"></span><!-- 화살표 상단 우측 가운데 -->
+				</div>
+			</div>
+			<div class="wrap_tab02 page_move">
+				<ul class="tab_ul02">
+					<li class="tab_li02 first_child"><a href="/artistplus/artistchart/index.htm?chartGubunCode=DP0000" title="전체" class="link_tab02" data-chart-code="DP0000">전체</a></li>
+					<li class="tab_li02"><a href="/artistplus/artistchart/index.htm?chartGubunCode=MG0000" title="남자그룹" class="link_tab02" data-chart-code="MG0000">남자그룹</a></li>
+					<li class="tab_li02"><a href="/artistplus/artistchart/index.htm?chartGubunCode=FG0000" title="여자그룹" class="link_tab02" data-chart-code="FG0000">여자그룹</a></li>
+					<li class="tab_li02 on"><a href="/artistplus/artistchart/index.htm?chartGubunCode=MS0000" title="남자솔로" class="link_tab02" data-chart-code="MS0000">남자솔로</a></li>
+					<li class="tab_li02"><a href="/artistplus/artistchart/index.htm?chartGubunCode=FS0000" title="여자솔로" class="link_tab02" data-chart-code="FS0000">여자솔로</a></li>
+					<li class="tab_li02"><a href="/artistplus/artistchart/index.htm?chartGubunCode=AB0000" title="해외" class="link_tab02" data-chart-code="AB0000">해외</a></li>
+					<li class="tab_li02 last_child"><a href="/artistplus/artistchart/index.htm?chartGubunCode=DP1800" title="인디" class="link_tab02" data-chart-code="DP1800">인디</a></li>
+				</ul>
+			</div>
+			<!-- ▼▼▼ 왼쪽 컨텐츠 ▼▼▼ -->
+			<div class="ltcont">
+				<!-- 아티스트 점유율 -->
+				
+			<div class="artist_top_chart">
+				<h3 class="none">아티스트점유율 TOP5</h3>
+				<p class="date">2021.11.27 기준</p>
+				<div class="wrap_artist_chart">
+					<div class="artist_list">
+						<p class="title"><span>아티스트점유율 TOP 5</span></p>
+						<ul>
+							<li class="nth1 on first_child"><em>1</em><strong class="ellipsis">BE&#39;O (비오)</strong></li>
+						
+							<li class="nth2"><em>2</em><strong class="ellipsis">임영웅</strong></li>
+						
+							<li class="nth3"><em>3</em><strong class="ellipsis">이승윤</strong></li>
+						
+							<li class="nth4"><em>4</em><strong class="ellipsis">sokodomo</strong></li>
+						
+							<li class="nth5"><em>5</em><strong class="ellipsis">베이식 (Basick)</strong></li>
+						</ul>
+					</div>
+					<div class="artist_chart">
+						<!-- 차트 -->
+						<div class="chart">
+							<h4><span>점유율</span></h4>
+							<div class="chart_info">
+								
+								<p class="artist rank1" style="">
+									<strong><span>12</span>%</strong>
+								</p>
+								
+								<p class="artist rank2" style="display:none;">
+									<strong><span>11</span>%</strong>
+								</p>
+								
+								<p class="artist rank3" style="display:none;">
+									<strong><span>11</span>%</strong>
+								</p>
+								
+								<p class="artist rank4" style="display:none;">
+									<strong><span>10</span>%</strong>
+								</p>
+								
+								<p class="artist rank5" style="display:none;">
+									<strong><span>10</span>%</strong>
+								</p>
+								
+								<div class="chart_cntt"></div>
+							</div>
+							<p class="txt_info"><span>점유율은 TOP 10 아티스트에 대한 이용량 중 선택한 아티스트의 이용량이 차지하는 비율입니다.</span></p>
+						</div>
+						<!-- //차트 -->
+						
+						<div class="graph" style="">
+							<h4><span>이 아티스트의 팬은?</span></h4>
+							<p class="gd_title"><span>성별비율</span></p>
+							<ul class="gender">
+								<li class="man" style="width:33%;">
+									<strong><span>남자</span></strong>
+									<span class="graph_bar"><span><em>33%</em></span></span>
+								</li>
+								<li class="woman" style="width:65%;">
+									<strong><span>여자</span></strong>
+									<span class="graph_bar"><span><em>65%</em></span></span>
+								</li>
+								<li class="" style="width:0%;">
+									<strong class="none"><span>기타</span></strong>
+									<span class="graph_bar"><span><em></em></span></span>
+								</li>
+							</ul>
+							<p class="ag_title"><span>연령별 비율</span></p>
+							<ul class="age_group">
+								<li class="nth1">
+									<strong><span>10대 </span></strong>
+									<span class="graph_bar"><span style="height:36%"><em>36%</em></span></span>
+								</li>
+							
+								<li class="nth2">
+									<strong><span>20대 </span></strong>
+									<span class="graph_bar"><span style="height:24%"><em>24%</em></span></span>
+								</li>
+							
+								<li class="nth3">
+									<strong><span>30대 </span></strong>
+									<span class="graph_bar"><span style="height:9%"><em>9%</em></span></span>
+								</li>
+							
+								<li class="nth4">
+									<strong><span>40대 </span></strong>
+									<span class="graph_bar"><span style="height:23%"><em>23%</em></span></span>
+								</li>
+							
+								<li class="nth5">
+									<strong><span>50대 </span></strong>
+									<span class="graph_bar"><span style="height:5%"><em>5%</em></span></span>
+								</li>
+							
+								<li class="nth6">
+									<strong><span>기타 </span></strong>
+									<span class="graph_bar"><span style="height:1%"><em>1%</em></span></span>
+								</li>
+							</ul>
+						</div>
+						
+						<div class="graph" style="display:none;">
+							<h4><span>이 아티스트의 팬은?</span></h4>
+							<p class="gd_title"><span>성별비율</span></p>
+							<ul class="gender">
+								<li class="man" style="width:20%;">
+									<strong><span>남자</span></strong>
+									<span class="graph_bar"><span><em>20%</em></span></span>
+								</li>
+								<li class="woman" style="width:75%;">
+									<strong><span>여자</span></strong>
+									<span class="graph_bar"><span><em>75%</em></span></span>
+								</li>
+								<li class="" style="width:0%;">
+									<strong class="none"><span>기타</span></strong>
+									<span class="graph_bar"><span><em></em></span></span>
+								</li>
+							</ul>
+							<p class="ag_title"><span>연령별 비율</span></p>
+							<ul class="age_group">
+								<li class="nth1">
+									<strong><span>10대 </span></strong>
+									<span class="graph_bar"><span style="height:5%"><em>5%</em></span></span>
+								</li>
+							
+								<li class="nth2">
+									<strong><span>20대 </span></strong>
+									<span class="graph_bar"><span style="height:13%"><em>13%</em></span></span>
+								</li>
+							
+								<li class="nth3">
+									<strong><span>30대 </span></strong>
+									<span class="graph_bar"><span style="height:12%"><em>12%</em></span></span>
+								</li>
+							
+								<li class="nth4">
+									<strong><span>40대 </span></strong>
+									<span class="graph_bar"><span style="height:21%"><em>21%</em></span></span>
+								</li>
+							
+								<li class="nth5">
+									<strong><span>50대 </span></strong>
+									<span class="graph_bar"><span style="height:27%"><em>27%</em></span></span>
+								</li>
+							
+								<li class="nth6">
+									<strong><span>기타 </span></strong>
+									<span class="graph_bar"><span style="height:15%"><em>15%</em></span></span>
+								</li>
+							</ul>
+						</div>
+						
+						<div class="graph" style="display:none;">
+							<h4><span>이 아티스트의 팬은?</span></h4>
+							<p class="gd_title"><span>성별비율</span></p>
+							<ul class="gender">
+								<li class="man" style="width:22%;">
+									<strong><span>남자</span></strong>
+									<span class="graph_bar"><span><em>22%</em></span></span>
+								</li>
+								<li class="woman" style="width:68%;">
+									<strong><span>여자</span></strong>
+									<span class="graph_bar"><span><em>68%</em></span></span>
+								</li>
+								<li class="" style="width:0%;">
+									<strong class="none"><span>기타</span></strong>
+									<span class="graph_bar"><span><em></em></span></span>
+								</li>
+							</ul>
+							<p class="ag_title"><span>연령별 비율</span></p>
+							<ul class="age_group">
+								<li class="nth1">
+									<strong><span>10대 </span></strong>
+									<span class="graph_bar"><span style="height:16%"><em>16%</em></span></span>
+								</li>
+							
+								<li class="nth2">
+									<strong><span>20대 </span></strong>
+									<span class="graph_bar"><span style="height:19%"><em>19%</em></span></span>
+								</li>
+							
+								<li class="nth3">
+									<strong><span>30대 </span></strong>
+									<span class="graph_bar"><span style="height:12%"><em>12%</em></span></span>
+								</li>
+							
+								<li class="nth4">
+									<strong><span>40대 </span></strong>
+									<span class="graph_bar"><span style="height:26%"><em>26%</em></span></span>
+								</li>
+							
+								<li class="nth5">
+									<strong><span>50대 </span></strong>
+									<span class="graph_bar"><span style="height:12%"><em>12%</em></span></span>
+								</li>
+							
+								<li class="nth6">
+									<strong><span>기타 </span></strong>
+									<span class="graph_bar"><span style="height:4%"><em>4%</em></span></span>
+								</li>
+							</ul>
+						</div>
+						
+						<div class="graph" style="display:none;">
+							<h4><span>이 아티스트의 팬은?</span></h4>
+							<p class="gd_title"><span>성별비율</span></p>
+							<ul class="gender">
+								<li class="man" style="width:47%;">
+									<strong><span>남자</span></strong>
+									<span class="graph_bar"><span><em>47%</em></span></span>
+								</li>
+								<li class="woman" style="width:48%;">
+									<strong><span>여자</span></strong>
+									<span class="graph_bar"><span><em>48%</em></span></span>
+								</li>
+								<li class="" style="width:0%;">
+									<strong class="none"><span>기타</span></strong>
+									<span class="graph_bar"><span><em></em></span></span>
+								</li>
+							</ul>
+							<p class="ag_title"><span>연령별 비율</span></p>
+							<ul class="age_group">
+								<li class="nth1">
+									<strong><span>10대 </span></strong>
+									<span class="graph_bar"><span style="height:31%"><em>31%</em></span></span>
+								</li>
+							
+								<li class="nth2">
+									<strong><span>20대 </span></strong>
+									<span class="graph_bar"><span style="height:22%"><em>22%</em></span></span>
+								</li>
+							
+								<li class="nth3">
+									<strong><span>30대 </span></strong>
+									<span class="graph_bar"><span style="height:7%"><em>7%</em></span></span>
+								</li>
+							
+								<li class="nth4">
+									<strong><span>40대 </span></strong>
+									<span class="graph_bar"><span style="height:27%"><em>27%</em></span></span>
+								</li>
+							
+								<li class="nth5">
+									<strong><span>50대 </span></strong>
+									<span class="graph_bar"><span style="height:7%"><em>7%</em></span></span>
+								</li>
+							
+								<li class="nth6">
+									<strong><span>기타 </span></strong>
+									<span class="graph_bar"><span style="height:1%"><em>1%</em></span></span>
+								</li>
+							</ul>
+						</div>
+						
+						<div class="graph" style="display:none;">
+							<h4><span>이 아티스트의 팬은?</span></h4>
+							<p class="gd_title"><span>성별비율</span></p>
+							<ul class="gender">
+								<li class="man" style="width:42%;">
+									<strong><span>남자</span></strong>
+									<span class="graph_bar"><span><em>42%</em></span></span>
+								</li>
+								<li class="woman" style="width:35%;">
+									<strong><span>여자</span></strong>
+									<span class="graph_bar"><span><em>35%</em></span></span>
+								</li>
+								<li class="" style="width:0%;">
+									<strong class="none"><span>기타</span></strong>
+									<span class="graph_bar"><span><em></em></span></span>
+								</li>
+							</ul>
+							<p class="ag_title"><span>연령별 비율</span></p>
+							<ul class="age_group">
+								<li class="nth1">
+									<strong><span>10대 </span></strong>
+									<span class="graph_bar"><span style="height:12%"><em>12%</em></span></span>
+								</li>
+							
+								<li class="nth2">
+									<strong><span>20대 </span></strong>
+									<span class="graph_bar"><span style="height:30%"><em>30%</em></span></span>
+								</li>
+							
+								<li class="nth3">
+									<strong><span>30대 </span></strong>
+									<span class="graph_bar"><span style="height:10%"><em>10%</em></span></span>
+								</li>
+							
+								<li class="nth4">
+									<strong><span>40대 </span></strong>
+									<span class="graph_bar"><span style="height:16%"><em>16%</em></span></span>
+								</li>
+							
+								<li class="nth5">
+									<strong><span>50대 </span></strong>
+									<span class="graph_bar"><span style="height:8%"><em>8%</em></span></span>
+								</li>
+							
+								<li class="nth6">
+									<strong><span>기타 </span></strong>
+									<span class="graph_bar"><span style="height:1%"><em>1%</em></span></span>
+								</li>
+							</ul>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+				<!-- 종합차트 -->
+				<h3 class="none">아티스트점유율 리스트</h3>
+				<div class="artistplus_txt"><!-- 140521_수정 세부점수란? -->
+					<p class="artistplus_info"><strong>세부점수란?</strong> 아티스트 관련 5가지 주요 항목에 대한 이용량을 10점 만점 기준으로 환산한 점수입니다. <button class="btn btn_text arrow_r" data-control="dropdown" data-dropdown-target="#dropdown"> <span class="text">자세히보기</span> <span class="icon"></span></button></p><!-- 140616_수정 aty -->
+					<div class="l_popup" id="dropdown" role="dialog" style="right:0px; top:20px; width:550px; display:none;">
+						<div class="l_cntt">
+							<div class="artistplus_guide">
+								<dl class="detail_point">
+									<dt><span class="icon type04"></span>세부점수</dt>
+									<dd>
+										아티스트에 대한 이용량을 5항목으로 분류한 후, 각 항목을 10점 만점의 표준 점수로 환산한 점수. 점수가 높은 항목은 집계기간 동안 타 아티스트 대비 이용량이 많은 항목이라고 볼 수 있습니다.  <br /><br />
+										세부점수는<strong> 사용량에 따른 가중치를 제외한 점수</strong>이며, 순위 선정 시에는 <br />음원 점수에 x4, 팬증가수 점수에 x2의 가중치를 부여합니다. <br />(항목별 사용자수의 차이를 반영하여 정확한 랭킹 산출을 위해 가중치를 부여하며, 가중치는 서비스 사용량변화에 따라 추후 변경될 수 있습니다.)
+									</dd>
+								</dl>
+								<dl class="detail_point02">
+									<dt>잠깐! 세부점수 5개를 합한 숫자가 더 높은데 순위가 낮다면?</dt>
+									<dd>아티스트 랭킹에 반영되는 최종 점수에는 가중치가 반영되므로, 음원점수에 4, 팬증가수 점수에 2를 곱한 것이 최종 점수가 되어 표준점수의 합으로 비교한 순위와 실제 순위가 다를 수 있습니다.</dd>
+								</dl>
+							</div>
+						</div>
+						<button type="button" class="btn_close"><span class="odd_span">닫기</span></button>
+						<span class="bullet_top"></span><!-- 화살표 상단 우측 가운데 -->
+					</div>
+				</div>
+				<div class="wrap_list_artistplus d_artist_list">
+					<ul>
+
+				
+					<li class="artistplus_li" data-page-index="1">
+						<div class="artistplus_li_wrap">
+							<span class="rank top">1</span><span class="none">위</span>
+							
+							
+								
+								
+								
+									<span title="2단계 상승" class="wrap_rank up">
+										<span class="num">2</span>
+										<span class="icon">단계 상승</span>
+									</span>
+								
+							
+						</div>
+						<div class="artistplus">
+							<div class="wrap_thumb">
+								<a href="javascript:melon.link.goArtistDetail('2758756');" title="BE&#39;O (비오) - 페이지 이동" class="thumb">
+									<img onerror="WEBPOCIMG.defaultArtistImg(this);" width="104" height="104" src="https://cdnimg.melon.co.kr/cm2/artistcrop/images/027/58/756/2758756_20210329174300_500.jpg/melon/resize/104/quality/80/optimize" alt=""/>
+									<span class="thumb_frame"></span>
+								</a>
+							</div>
+							<div class="wrap_info">
+								<dl>
+									<dt><strong class="none">아티스트명</strong><a href="javascript:melon.link.goArtistDetail('2758756');" title="BE&#39;O (비오) - 페이지 이동" class="ellipsis">BE&#39;O (비오)</a></dt>
+									<dd class="gubun" data-fan-cnt="2758756">팬 20,797명
+										 (+ 1,111)
+									</dd>
+									<dd class="consumer_list">
+										<strong class="label">세부점수</strong>
+										<table border="1" style="width: 100%">
+											<caption>분야별 점수 음원, 팬증가수, 좋아요, 포토, 비디오, 톡 관련 리스트입니다.</caption>
+											<colgroup>
+												<col style="width:58px;" />
+												<col style="width:58px;" />
+												<col style="width:58px;" />
+												<col style="width:58px;" />
+												<col style="width:58px;" />
+												<!-- <col style="width: 49px;"> -->
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col" class="first_child"><div class="wrap">음원</div></th>
+													<th scope="col"><div class="wrap">팬증가수</div></th>
+													<th scope="col"><div class="wrap">좋아요</div></th>
+													<th scope="col"><div class="wrap">포토</div></th>
+													<th scope="col"><div class="wrap">비디오</div></th>
+													<!-- <th scope="col"><div class="wrap">톡</div></th> -->
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="first_child"><div class="wrap">10</div></td>
+													<td><div class="wrap">10</div></td>
+													<td><div class="wrap">9.3</div></td>
+													<td><div class="wrap">7.2</div></td>
+													<td><div class="wrap">3.9</div></td>
+													
+												</tr>
+											</tbody>
+										</table>
+									</dd>
+									<dd class="wrap_btn">
+										<button type="button" title="BE&#39;O (비오) 팬맺기" data-artist-no="2758756" data-artist-menuId="68030101" class="btn_join_fan"><span class="odd_span">팬맺기</span></button>
+									</dd>
+								</dl>
+							</div>
+						</div>
+						<div class="week_chart">
+							<strong class="label">지난 일주일간 순위</strong>
+							<div class="chart dataRankProgs" data-chart-weekRank="2,2,1,3,3,3,1" data-artistName="BE&#39;O (비오)"></div>
+						</div>
+					</li>
+				
+					<li class="artistplus_li" data-page-index="1">
+						<div class="artistplus_li_wrap">
+							<span class="rank top">2</span><span class="none">위</span>
+							
+							
+								
+									<span title="순위 동일" class="wrap_rank">
+										<span class="num">0</span>
+										<span class="icon">순위 동일</span>
+									</span>
+								
+								
+								
+							
+						</div>
+						<div class="artistplus">
+							<div class="wrap_thumb">
+								<a href="javascript:melon.link.goArtistDetail('994944');" title="임영웅 - 페이지 이동" class="thumb">
+									<img onerror="WEBPOCIMG.defaultArtistImg(this);" width="104" height="104" src="https://cdnimg.melon.co.kr/cm2/artistcrop/images/009/94/944/994944_20210916181430_500.jpg/melon/resize/104/quality/80/optimize" alt=""/>
+									<span class="thumb_frame"></span>
+								</a>
+							</div>
+							<div class="wrap_info">
+								<dl>
+									<dt><strong class="none">아티스트명</strong><a href="javascript:melon.link.goArtistDetail('994944');" title="임영웅 - 페이지 이동" class="ellipsis">임영웅</a></dt>
+									<dd class="gubun" data-fan-cnt="994944">팬 108,906명
+										 (+ 46)
+									</dd>
+									<dd class="consumer_list">
+										<strong class="label">세부점수</strong>
+										<table border="1" style="width: 100%">
+											<caption>분야별 점수 음원, 팬증가수, 좋아요, 포토, 비디오, 톡 관련 리스트입니다.</caption>
+											<colgroup>
+												<col style="width:58px;" />
+												<col style="width:58px;" />
+												<col style="width:58px;" />
+												<col style="width:58px;" />
+												<col style="width:58px;" />
+												<!-- <col style="width: 49px;"> -->
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col" class="first_child"><div class="wrap">음원</div></th>
+													<th scope="col"><div class="wrap">팬증가수</div></th>
+													<th scope="col"><div class="wrap">좋아요</div></th>
+													<th scope="col"><div class="wrap">포토</div></th>
+													<th scope="col"><div class="wrap">비디오</div></th>
+													<!-- <th scope="col"><div class="wrap">톡</div></th> -->
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="first_child"><div class="wrap">9</div></td>
+													<td><div class="wrap">4.5</div></td>
+													<td><div class="wrap">7.6</div></td>
+													<td><div class="wrap">7.4</div></td>
+													<td><div class="wrap">8.7</div></td>
+													
+												</tr>
+											</tbody>
+										</table>
+									</dd>
+									<dd class="wrap_btn">
+										<button type="button" title="임영웅 팬맺기" data-artist-no="994944" data-artist-menuId="68030101" class="btn_join_fan"><span class="odd_span">팬맺기</span></button>
+									</dd>
+								</dl>
+							</div>
+						</div>
+						<div class="week_chart">
+							<strong class="label">지난 일주일간 순위</strong>
+							<div class="chart dataRankProgs" data-chart-weekRank="1,1,2,2,2,2,2" data-artistName="임영웅"></div>
+						</div>
+					</li>
+				
+					<li class="artistplus_li" data-page-index="1">
+						<div class="artistplus_li_wrap">
+							<span class="rank top">3</span><span class="none">위</span>
+							
+							
+								
+								
+									<span title="2단계 하락" class="wrap_rank down">
+										<span class="num">2</span>
+										<span class="icon">단계 하락</span>
+									</span>
+								
+								
+							
+						</div>
+						<div class="artistplus">
+							<div class="wrap_thumb">
+								<a href="javascript:melon.link.goArtistDetail('723192');" title="이승윤 - 페이지 이동" class="thumb">
+									<img onerror="WEBPOCIMG.defaultArtistImg(this);" width="104" height="104" src="https://cdnimg.melon.co.kr/cm2/artistcrop/images/007/23/192/723192_20211124141729_500.jpg/melon/resize/104/quality/80/optimize" alt=""/>
+									<span class="thumb_frame"></span>
+								</a>
+							</div>
+							<div class="wrap_info">
+								<dl>
+									<dt><strong class="none">아티스트명</strong><a href="javascript:melon.link.goArtistDetail('723192');" title="이승윤 - 페이지 이동" class="ellipsis">이승윤</a></dt>
+									<dd class="gubun" data-fan-cnt="723192">팬 31,467명
+										 (+ 328)
+									</dd>
+									<dd class="consumer_list">
+										<strong class="label">세부점수</strong>
+										<table border="1" style="width: 100%">
+											<caption>분야별 점수 음원, 팬증가수, 좋아요, 포토, 비디오, 톡 관련 리스트입니다.</caption>
+											<colgroup>
+												<col style="width:58px;" />
+												<col style="width:58px;" />
+												<col style="width:58px;" />
+												<col style="width:58px;" />
+												<col style="width:58px;" />
+												<!-- <col style="width: 49px;"> -->
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col" class="first_child"><div class="wrap">음원</div></th>
+													<th scope="col"><div class="wrap">팬증가수</div></th>
+													<th scope="col"><div class="wrap">좋아요</div></th>
+													<th scope="col"><div class="wrap">포토</div></th>
+													<th scope="col"><div class="wrap">비디오</div></th>
+													<!-- <th scope="col"><div class="wrap">톡</div></th> -->
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="first_child"><div class="wrap">7.1</div></td>
+													<td><div class="wrap">7.3</div></td>
+													<td><div class="wrap">10</div></td>
+													<td><div class="wrap">10</div></td>
+													<td><div class="wrap">9.1</div></td>
+													
+												</tr>
+											</tbody>
+										</table>
+									</dd>
+									<dd class="wrap_btn">
+										<button type="button" title="이승윤 팬맺기" data-artist-no="723192" data-artist-menuId="68030101" class="btn_join_fan"><span class="odd_span">팬맺기</span></button>
+									</dd>
+								</dl>
+							</div>
+						</div>
+						<div class="week_chart">
+							<strong class="label">지난 일주일간 순위</strong>
+							<div class="chart dataRankProgs" data-chart-weekRank="9,7,5,1,1,1,3" data-artistName="이승윤"></div>
+						</div>
+					</li>
+				
+					<li class="artistplus_li" data-page-index="1">
+						<div class="artistplus_li_wrap">
+							<span class="rank">4</span><span class="none">위</span>
+							
+							
+								
+									<span title="순위 동일" class="wrap_rank">
+										<span class="num">0</span>
+										<span class="icon">순위 동일</span>
+									</span>
+								
+								
+								
+							
+						</div>
+						<div class="artistplus">
+							<div class="wrap_thumb">
+								<a href="javascript:melon.link.goArtistDetail('2561475');" title="sokodomo - 페이지 이동" class="thumb">
+									<img onerror="WEBPOCIMG.defaultArtistImg(this);" width="104" height="104" src="https://cdnimg.melon.co.kr/cm2/artistcrop/images/025/61/475/2561475_20210506154326_500.jpg/melon/resize/104/quality/80/optimize" alt=""/>
+									<span class="thumb_frame"></span>
+								</a>
+							</div>
+							<div class="wrap_info">
+								<dl>
+									<dt><strong class="none">아티스트명</strong><a href="javascript:melon.link.goArtistDetail('2561475');" title="sokodomo - 페이지 이동" class="ellipsis">sokodomo</a></dt>
+									<dd class="gubun" data-fan-cnt="2561475">팬 10,494명
+										 (+ 219)
+									</dd>
+									<dd class="consumer_list">
+										<strong class="label">세부점수</strong>
+										<table border="1" style="width: 100%">
+											<caption>분야별 점수 음원, 팬증가수, 좋아요, 포토, 비디오, 톡 관련 리스트입니다.</caption>
+											<colgroup>
+												<col style="width:58px;" />
+												<col style="width:58px;" />
+												<col style="width:58px;" />
+												<col style="width:58px;" />
+												<col style="width:58px;" />
+												<!-- <col style="width: 49px;"> -->
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col" class="first_child"><div class="wrap">음원</div></th>
+													<th scope="col"><div class="wrap">팬증가수</div></th>
+													<th scope="col"><div class="wrap">좋아요</div></th>
+													<th scope="col"><div class="wrap">포토</div></th>
+													<th scope="col"><div class="wrap">비디오</div></th>
+													<!-- <th scope="col"><div class="wrap">톡</div></th> -->
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="first_child"><div class="wrap">8.7</div></td>
+													<td><div class="wrap">6.6</div></td>
+													<td><div class="wrap">8</div></td>
+													<td><div class="wrap">7.8</div></td>
+													<td><div class="wrap">3.1</div></td>
+													
+												</tr>
+											</tbody>
+										</table>
+									</dd>
+									<dd class="wrap_btn">
+										<button type="button" title="sokodomo 팬맺기" data-artist-no="2561475" data-artist-menuId="68030101" class="btn_join_fan"><span class="odd_span">팬맺기</span></button>
+									</dd>
+								</dl>
+							</div>
+						</div>
+						<div class="week_chart">
+							<strong class="label">지난 일주일간 순위</strong>
+							<div class="chart dataRankProgs" data-chart-weekRank="6,5,4,4,4,4,4" data-artistName="sokodomo"></div>
+						</div>
+					</li>
+				
+					<li class="artistplus_li" data-page-index="1">
+						<div class="artistplus_li_wrap">
+							<span class="rank">5</span><span class="none">위</span>
+							
+							
+								
+								
+								
+									<span title="2단계 상승" class="wrap_rank up">
+										<span class="num">2</span>
+										<span class="icon">단계 상승</span>
+									</span>
+								
+							
+						</div>
+						<div class="artistplus">
+							<div class="wrap_thumb">
+								<a href="javascript:melon.link.goArtistDetail('241227');" title="베이식 (Basick) - 페이지 이동" class="thumb">
+									<img onerror="WEBPOCIMG.defaultArtistImg(this);" width="104" height="104" src="https://cdnimg.melon.co.kr/cm2/artistcrop/images/002/41/227/241227_500.jpg/melon/resize/104/quality/80/optimize" alt=""/>
+									<span class="thumb_frame"></span>
+								</a>
+							</div>
+							<div class="wrap_info">
+								<dl>
+									<dt><strong class="none">아티스트명</strong><a href="javascript:melon.link.goArtistDetail('241227');" title="베이식 (Basick) - 페이지 이동" class="ellipsis">베이식 (Basick)</a></dt>
+									<dd class="gubun" data-fan-cnt="241227">팬 13,295명
+										 (+ 283)
+									</dd>
+									<dd class="consumer_list">
+										<strong class="label">세부점수</strong>
+										<table border="1" style="width: 100%">
+											<caption>분야별 점수 음원, 팬증가수, 좋아요, 포토, 비디오, 톡 관련 리스트입니다.</caption>
+											<colgroup>
+												<col style="width:58px;" />
+												<col style="width:58px;" />
+												<col style="width:58px;" />
+												<col style="width:58px;" />
+												<col style="width:58px;" />
+												<!-- <col style="width: 49px;"> -->
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col" class="first_child"><div class="wrap">음원</div></th>
+													<th scope="col"><div class="wrap">팬증가수</div></th>
+													<th scope="col"><div class="wrap">좋아요</div></th>
+													<th scope="col"><div class="wrap">포토</div></th>
+													<th scope="col"><div class="wrap">비디오</div></th>
+													<!-- <th scope="col"><div class="wrap">톡</div></th> -->
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="first_child"><div class="wrap">8.6</div></td>
+													<td><div class="wrap">7.1</div></td>
+													<td><div class="wrap">8.2</div></td>
+													<td><div class="wrap">5.7</div></td>
+													<td><div class="wrap">3.3</div></td>
+													
+												</tr>
+											</tbody>
+										</table>
+									</dd>
+									<dd class="wrap_btn">
+										<button type="button" title="베이식 (Basick) 팬맺기" data-artist-no="241227" data-artist-menuId="68030101" class="btn_join_fan"><span class="odd_span">팬맺기</span></button>
+									</dd>
+								</dl>
+							</div>
+						</div>
+						<div class="week_chart">
+							<strong class="label">지난 일주일간 순위</strong>
+							<div class="chart dataRankProgs" data-chart-weekRank="5,6,8,7,7,7,5" data-artistName="베이식 (Basick)"></div>
+						</div>
+					</li>
+				
+					<li class="artistplus_li" data-page-index="1">
+						<div class="artistplus_li_wrap">
+							<span class="rank">6</span><span class="none">위</span>
+							
+							
+								
+								
+								
+									<span title="5단계 상승" class="wrap_rank up">
+										<span class="num">5</span>
+										<span class="icon">단계 상승</span>
+									</span>
+								
+							
+						</div>
+						<div class="artistplus">
+							<div class="wrap_thumb">
+								<a href="javascript:melon.link.goArtistDetail('2757382');" title="Mudd the student - 페이지 이동" class="thumb">
+									<img onerror="WEBPOCIMG.defaultArtistImg(this);" width="104" height="104" src="https://cdnimg.melon.co.kr/cm2/artistcrop/images/027/57/382/2757382_20210525110905_500.jpg/melon/resize/104/quality/80/optimize" alt=""/>
+									<span class="thumb_frame"></span>
+								</a>
+							</div>
+							<div class="wrap_info">
+								<dl>
+									<dt><strong class="none">아티스트명</strong><a href="javascript:melon.link.goArtistDetail('2757382');" title="Mudd the student - 페이지 이동" class="ellipsis">Mudd the student</a></dt>
+									<dd class="gubun" data-fan-cnt="2757382">팬 4,899명
+										 (+ 501)
+									</dd>
+									<dd class="consumer_list">
+										<strong class="label">세부점수</strong>
+										<table border="1" style="width: 100%">
+											<caption>분야별 점수 음원, 팬증가수, 좋아요, 포토, 비디오, 톡 관련 리스트입니다.</caption>
+											<colgroup>
+												<col style="width:58px;" />
+												<col style="width:58px;" />
+												<col style="width:58px;" />
+												<col style="width:58px;" />
+												<col style="width:58px;" />
+												<!-- <col style="width: 49px;"> -->
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col" class="first_child"><div class="wrap">음원</div></th>
+													<th scope="col"><div class="wrap">팬증가수</div></th>
+													<th scope="col"><div class="wrap">좋아요</div></th>
+													<th scope="col"><div class="wrap">포토</div></th>
+													<th scope="col"><div class="wrap">비디오</div></th>
+													<!-- <th scope="col"><div class="wrap">톡</div></th> -->
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="first_child"><div class="wrap">8.2</div></td>
+													<td><div class="wrap">8.2</div></td>
+													<td><div class="wrap">7.9</div></td>
+													<td><div class="wrap">4.1</div></td>
+													<td><div class="wrap">2.5</div></td>
+													
+												</tr>
+											</tbody>
+										</table>
+									</dd>
+									<dd class="wrap_btn">
+										<button type="button" title="Mudd the student 팬맺기" data-artist-no="2757382" data-artist-menuId="68030101" class="btn_join_fan"><span class="odd_span">팬맺기</span></button>
+									</dd>
+								</dl>
+							</div>
+						</div>
+						<div class="week_chart">
+							<strong class="label">지난 일주일간 순위</strong>
+							<div class="chart dataRankProgs" data-chart-weekRank="8,10,10,12,10,11,6" data-artistName="Mudd the student"></div>
+						</div>
+					</li>
+				
+					<li class="artistplus_li" data-page-index="1">
+						<div class="artistplus_li_wrap">
+							<span class="rank">7</span><span class="none">위</span>
+							
+							
+								
+								
+								
+									<span title="5단계 상승" class="wrap_rank up">
+										<span class="num">5</span>
+										<span class="icon">단계 상승</span>
+									</span>
+								
+							
+						</div>
+						<div class="artistplus">
+							<div class="wrap_thumb">
+								<a href="javascript:melon.link.goArtistDetail('2738493');" title="조광일 - 페이지 이동" class="thumb">
+									<img onerror="WEBPOCIMG.defaultArtistImg(this);" width="104" height="104" src="https://cdnimg.melon.co.kr/cm2/artistcrop/images/027/38/493/2738493_20201015173834_500.jpg/melon/resize/104/quality/80/optimize" alt=""/>
+									<span class="thumb_frame"></span>
+								</a>
+							</div>
+							<div class="wrap_info">
+								<dl>
+									<dt><strong class="none">아티스트명</strong><a href="javascript:melon.link.goArtistDetail('2738493');" title="조광일 - 페이지 이동" class="ellipsis">조광일</a></dt>
+									<dd class="gubun" data-fan-cnt="2738493">팬 12,782명
+										 (+ 273)
+									</dd>
+									<dd class="consumer_list">
+										<strong class="label">세부점수</strong>
+										<table border="1" style="width: 100%">
+											<caption>분야별 점수 음원, 팬증가수, 좋아요, 포토, 비디오, 톡 관련 리스트입니다.</caption>
+											<colgroup>
+												<col style="width:58px;" />
+												<col style="width:58px;" />
+												<col style="width:58px;" />
+												<col style="width:58px;" />
+												<col style="width:58px;" />
+												<!-- <col style="width: 49px;"> -->
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col" class="first_child"><div class="wrap">음원</div></th>
+													<th scope="col"><div class="wrap">팬증가수</div></th>
+													<th scope="col"><div class="wrap">좋아요</div></th>
+													<th scope="col"><div class="wrap">포토</div></th>
+													<th scope="col"><div class="wrap">비디오</div></th>
+													<!-- <th scope="col"><div class="wrap">톡</div></th> -->
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="first_child"><div class="wrap">8.3</div></td>
+													<td><div class="wrap">7</div></td>
+													<td><div class="wrap">7.7</div></td>
+													<td><div class="wrap">5.3</div></td>
+													<td><div class="wrap">3.4</div></td>
+													
+												</tr>
+											</tbody>
+										</table>
+									</dd>
+									<dd class="wrap_btn">
+										<button type="button" title="조광일 팬맺기" data-artist-no="2738493" data-artist-menuId="68030101" class="btn_join_fan"><span class="odd_span">팬맺기</span></button>
+									</dd>
+								</dl>
+							</div>
+						</div>
+						<div class="week_chart">
+							<strong class="label">지난 일주일간 순위</strong>
+							<div class="chart dataRankProgs" data-chart-weekRank="13,14,11,14,11,12,7" data-artistName="조광일"></div>
+						</div>
+					</li>
+				
+					<li class="artistplus_li" data-page-index="1">
+						<div class="artistplus_li_wrap">
+							<span class="rank">8</span><span class="none">위</span>
+							
+							
+								
+								
+									<span title="3단계 하락" class="wrap_rank down">
+										<span class="num">3</span>
+										<span class="icon">단계 하락</span>
+									</span>
+								
+								
+							
+						</div>
+						<div class="artistplus">
+							<div class="wrap_thumb">
+								<a href="javascript:melon.link.goArtistDetail('2138620');" title="이무진 - 페이지 이동" class="thumb">
+									<img onerror="WEBPOCIMG.defaultArtistImg(this);" width="104" height="104" src="https://cdnimg.melon.co.kr/cm2/artistcrop/images/021/38/620/2138620_20210514153129_500.jpg/melon/resize/104/quality/80/optimize" alt=""/>
+									<span class="thumb_frame"></span>
+								</a>
+							</div>
+							<div class="wrap_info">
+								<dl>
+									<dt><strong class="none">아티스트명</strong><a href="javascript:melon.link.goArtistDetail('2138620');" title="이무진 - 페이지 이동" class="ellipsis">이무진</a></dt>
+									<dd class="gubun" data-fan-cnt="2138620">팬 47,212명
+										 (+ 62)
+									</dd>
+									<dd class="consumer_list">
+										<strong class="label">세부점수</strong>
+										<table border="1" style="width: 100%">
+											<caption>분야별 점수 음원, 팬증가수, 좋아요, 포토, 비디오, 톡 관련 리스트입니다.</caption>
+											<colgroup>
+												<col style="width:58px;" />
+												<col style="width:58px;" />
+												<col style="width:58px;" />
+												<col style="width:58px;" />
+												<col style="width:58px;" />
+												<!-- <col style="width: 49px;"> -->
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col" class="first_child"><div class="wrap">음원</div></th>
+													<th scope="col"><div class="wrap">팬증가수</div></th>
+													<th scope="col"><div class="wrap">좋아요</div></th>
+													<th scope="col"><div class="wrap">포토</div></th>
+													<th scope="col"><div class="wrap">비디오</div></th>
+													<!-- <th scope="col"><div class="wrap">톡</div></th> -->
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="first_child"><div class="wrap">7.1</div></td>
+													<td><div class="wrap">4.9</div></td>
+													<td><div class="wrap">5.3</div></td>
+													<td><div class="wrap">6.6</div></td>
+													<td><div class="wrap">6.5</div></td>
+													
+												</tr>
+											</tbody>
+										</table>
+									</dd>
+									<dd class="wrap_btn">
+										<button type="button" title="이무진 팬맺기" data-artist-no="2138620" data-artist-menuId="68030101" class="btn_join_fan"><span class="odd_span">팬맺기</span></button>
+									</dd>
+								</dl>
+							</div>
+						</div>
+						<div class="week_chart">
+							<strong class="label">지난 일주일간 순위</strong>
+							<div class="chart dataRankProgs" data-chart-weekRank="4,4,6,5,5,5,8" data-artistName="이무진"></div>
+						</div>
+					</li>
+				
+					<li class="artistplus_li" data-page-index="1">
+						<div class="artistplus_li_wrap">
+							<span class="rank">9</span><span class="none">위</span>
+							
+							
+								
+								
+								
+									<span title="9단계 상승" class="wrap_rank up">
+										<span class="num">9</span>
+										<span class="icon">단계 상승</span>
+									</span>
+								
+							
+						</div>
+						<div class="artistplus">
+							<div class="wrap_thumb">
+								<a href="javascript:melon.link.goArtistDetail('254105');" title="쿤타 - 페이지 이동" class="thumb">
+									<img onerror="WEBPOCIMG.defaultArtistImg(this);" width="104" height="104" src="https://cdnimg.melon.co.kr/cm2/artistcrop/images/002/54/105/254105_20200707173951_500.jpg/melon/resize/104/quality/80/optimize" alt=""/>
+									<span class="thumb_frame"></span>
+								</a>
+							</div>
+							<div class="wrap_info">
+								<dl>
+									<dt><strong class="none">아티스트명</strong><a href="javascript:melon.link.goArtistDetail('254105');" title="쿤타 - 페이지 이동" class="ellipsis">쿤타</a></dt>
+									<dd class="gubun" data-fan-cnt="254105">팬 3,311명
+										 (+ 208)
+									</dd>
+									<dd class="consumer_list">
+										<strong class="label">세부점수</strong>
+										<table border="1" style="width: 100%">
+											<caption>분야별 점수 음원, 팬증가수, 좋아요, 포토, 비디오, 톡 관련 리스트입니다.</caption>
+											<colgroup>
+												<col style="width:58px;" />
+												<col style="width:58px;" />
+												<col style="width:58px;" />
+												<col style="width:58px;" />
+												<col style="width:58px;" />
+												<!-- <col style="width: 49px;"> -->
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col" class="first_child"><div class="wrap">음원</div></th>
+													<th scope="col"><div class="wrap">팬증가수</div></th>
+													<th scope="col"><div class="wrap">좋아요</div></th>
+													<th scope="col"><div class="wrap">포토</div></th>
+													<th scope="col"><div class="wrap">비디오</div></th>
+													<!-- <th scope="col"><div class="wrap">톡</div></th> -->
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="first_child"><div class="wrap">8</div></td>
+													<td><div class="wrap">6.6</div></td>
+													<td><div class="wrap">7.2</div></td>
+													<td><div class="wrap">4.9</div></td>
+													<td><div class="wrap">2.6</div></td>
+													
+												</tr>
+											</tbody>
+										</table>
+									</dd>
+									<dd class="wrap_btn">
+										<button type="button" title="쿤타 팬맺기" data-artist-no="254105" data-artist-menuId="68030101" class="btn_join_fan"><span class="odd_span">팬맺기</span></button>
+									</dd>
+								</dl>
+							</div>
+						</div>
+						<div class="week_chart">
+							<strong class="label">지난 일주일간 순위</strong>
+							<div class="chart dataRankProgs" data-chart-weekRank="11,12,14,15,16,18,9" data-artistName="쿤타"></div>
+						</div>
+					</li>
+				
+					<li class="artistplus_li" data-page-index="1">
+						<div class="artistplus_li_wrap">
+							<span class="rank">10</span><span class="none">위</span>
+							
+							
+								
+								
+									<span title="2단계 하락" class="wrap_rank down">
+										<span class="num">2</span>
+										<span class="icon">단계 하락</span>
+									</span>
+								
+								
+							
+						</div>
+						<div class="artistplus">
+							<div class="wrap_thumb">
+								<a href="javascript:melon.link.goArtistDetail('420621');" title="Justin Bieber - 페이지 이동" class="thumb">
+									<img onerror="WEBPOCIMG.defaultArtistImg(this);" width="104" height="104" src="https://cdnimg.melon.co.kr/cm2/artistcrop/images/004/20/621/420621_20210305153040_500.jpg/melon/resize/104/quality/80/optimize" alt=""/>
+									<span class="thumb_frame"></span>
+								</a>
+							</div>
+							<div class="wrap_info">
+								<dl>
+									<dt><strong class="none">아티스트명</strong><a href="javascript:melon.link.goArtistDetail('420621');" title="Justin Bieber - 페이지 이동" class="ellipsis">Justin Bieber</a></dt>
+									<dd class="gubun" data-fan-cnt="420621">팬 80,398명
+										 (+ 72)
+									</dd>
+									<dd class="consumer_list">
+										<strong class="label">세부점수</strong>
+										<table border="1" style="width: 100%">
+											<caption>분야별 점수 음원, 팬증가수, 좋아요, 포토, 비디오, 톡 관련 리스트입니다.</caption>
+											<colgroup>
+												<col style="width:58px;" />
+												<col style="width:58px;" />
+												<col style="width:58px;" />
+												<col style="width:58px;" />
+												<col style="width:58px;" />
+												<!-- <col style="width: 49px;"> -->
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col" class="first_child"><div class="wrap">음원</div></th>
+													<th scope="col"><div class="wrap">팬증가수</div></th>
+													<th scope="col"><div class="wrap">좋아요</div></th>
+													<th scope="col"><div class="wrap">포토</div></th>
+													<th scope="col"><div class="wrap">비디오</div></th>
+													<!-- <th scope="col"><div class="wrap">톡</div></th> -->
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="first_child"><div class="wrap">8</div></td>
+													<td><div class="wrap">5.1</div></td>
+													<td><div class="wrap">5.1</div></td>
+													<td><div class="wrap">4.9</div></td>
+													<td><div class="wrap">4.7</div></td>
+													
+												</tr>
+											</tbody>
+										</table>
+									</dd>
+									<dd class="wrap_btn">
+										<button type="button" title="Justin Bieber 팬맺기" data-artist-no="420621" data-artist-menuId="68030101" class="btn_join_fan"><span class="odd_span">팬맺기</span></button>
+									</dd>
+								</dl>
+							</div>
+						</div>
+						<div class="week_chart">
+							<strong class="label">지난 일주일간 순위</strong>
+							<div class="chart dataRankProgs" data-chart-weekRank="7,8,9,8,8,8,10" data-artistName="Justin Bieber"></div>
+						</div>
+					</li>
+				</ul>
+					
+					<button class="btn_full more" type="button"><span class="odd_span"><span class="even_span">더보기<span class="icon"></span></span></span></button>
+					
+				</div>
+			</div>
+			<!-- ▲▲▲ 왼쪽 컨텐츠 ▲▲▲ -->
+			<!-- ▼▼▼ 오른쪽 컨텐츠 ▼▼▼ -->
+			<div class="rtcont">
+				
+
+				<ul class="chart_update d_artist_list">
+					
+						
+						<li class="first_child">
+							<!-- 음원 1위 아티스트 -->
+							<div class="sound_source_top">
+								<div class="title_wrap"><h4>음원 1위 아티스트</h4></div>
+								<dl class="update_artist_cntt">
+									<dt><a href="javascript:melon.link.goArtistDetail('2758756');" title="BE&#39;O (비오)" class="ellipsis">BE&#39;O (비오)</a></dt>
+									<dd class="thumb">
+										<a href="javascript:melon.link.goArtistDetail('2758756');" title="BE&#39;O (비오) ">
+											<span class="thumb_frame"></span>
+											<img onerror="WEBPOCIMG.defaultArtistImg(this);" width="64" height="64" src="https://cdnimg.melon.co.kr/cm2/artistcrop/images/027/58/756/2758756_20210329174300_500.jpg/melon/resize/64/quality/80/optimize" alt=""/>
+										</a>
+									</dd>
+									<dd class="content">
+										<div class="wrap_cntt">
+											<p><span>인기곡</span></p>
+											<ul>
+												<li class="first_child"><a href="javascript:;" onclick="javascript:melon.play.playSong('68030101','34298499');" title="리무진 (Feat. MINO) (Prod. GRAY) 재생 - 새 창" class="btn_play_song"> <span class="icon_play">곡재생</span> <span class="songname11">리무진 (Feat. MINO) (Prod. GRAY)</span></a></li>
+											
+												<li class=""><a href="javascript:;" onclick="javascript:melon.play.playSong('68030101','34215822');" title="쉬어 (Feat. MINO) (Prod. GRAY) 재생 - 새 창" class="btn_play_song"> <span class="icon_play">곡재생</span> <span class="songname11">쉬어 (Feat. MINO) (Prod. GRAY)</span></a></li>
+											
+												<li class=""><a href="javascript:;" onclick="javascript:melon.play.playSong('68030101','33448767');" title="문득 재생 - 새 창" class="btn_play_song"> <span class="icon_play">곡재생</span> <span class="songname11">문득</span></a></li>
+											</ul>
+										</div>
+										<span class="box_arrow"></span>
+									</dd>
+									<dd class="wrap_btn">
+										<button type="button" title="BE&#39;O (비오) 팬맺기" data-artist-no="2758756" data-artist-menuId="68030101" class="btn_join_fan"><span class="odd_span">팬맺기</span></button>
+										<span class="cnt_fan"><span class="cnt_span">0</span></span>
+									</dd>
+								</dl>
+							</div>
+							<!-- //음원 1위 아티스트 -->
+						</li>
+						
+						
+						
+						
+						
+					
+				
+						
+						
+						<li class="">
+							<!-- 팬상승수 1위 아티스트 -->
+							<div class="fan_rank_top">
+								<div class="title_wrap"><h4>팬상승수 1위 아티스트</h4></div>
+								<dl class="update_artist_cntt">
+									<dt><a href="javascript:melon.link.goArtistDetail('2758756');" title="BE&#39;O (비오)" class="ellipsis">BE&#39;O (비오)</a></dt>
+									<dd class="thumb">
+										<a href="javascript:melon.link.goArtistDetail('2758756');" title="BE&#39;O (비오)">
+											<span class="thumb_frame"></span>
+											<img onerror="WEBPOCIMG.defaultArtistImg(this);" width="64" height="64" src="https://cdnimg.melon.co.kr/cm2/artistcrop/images/027/58/756/2758756_20210329174300_500.jpg/melon/resize/64/quality/80/optimize" alt=""/>
+										</a>
+									</dd>
+									<dd class="content">
+										<div class="wrap_cntt">
+											<p><span>일주일간 팬수 추이</span><em>+4,012</em></p>
+											<div class="chart"></div>
+										</div>
+										<span class="box_arrow"></span>
+									</dd>
+									<dd class="wrap_btn">
+										<button type="button" title="BE&#39;O (비오) 팬맺기" data-artist-no="2758756" data-artist-menuId="68030101" class="btn_join_fan"><span class="odd_span">팬맺기</span></button>
+										<span class="cnt_fan"><span class="cnt_span">0</span></span>
+									</dd>
+								</dl>
+							</div>
+							<!-- //팬상승수 1위 아티스트 -->
+						</li>
+						
+						
+						
+						
+					
+				
+						
+						
+						
+						<li class="">
+							<!-- 좋아요 1위 아티스트 -->
+							<div class="like_rank_top">
+								<div class="title_wrap"><h4>좋아요 1위 아티스트</h4></div>
+								<dl class="update_artist_cntt">
+									<dt><a href="javascript:melon.link.goArtistDetail('723192');" title="이승윤" class="ellipsis">이승윤</a></dt>
+									<dd class="thumb">
+										<a href="javascript:melon.link.goArtistDetail('723192');" title="이승윤">
+											<span class="thumb_frame"></span>
+											<img onerror="WEBPOCIMG.defaultArtistImg(this);" width="64" height="64" src="https://cdnimg.melon.co.kr/cm2/artistcrop/images/007/23/192/723192_20211124141729_500.jpg/melon/resize/64/quality/80/optimize" alt=""/>
+										</a>
+									</dd>
+									<dd class="content">
+										<div class="wrap_cntt">
+											<p><span>좋아요 많은곡</span></p>
+											<ul>
+												<li class="first_child"><a href="javascript:;" onclick="javascript:melon.play.playSong('68030101','33153594');" title="Chitty Chitty Bang Bang 재생 - 새 창" class="btn_play_song"> <span class="icon_play">곡재생</span> <span class="songname11">Chitty Chitty Bang Bang</span></a></li>
+											
+												<li class=""><a href="javascript:;" onclick="javascript:melon.play.playSong('68030101','33607214');" title="들려주고 싶었던 재생 - 새 창" class="btn_play_song"> <span class="icon_play">곡재생</span> <span class="songname11">들려주고 싶었던</span></a></li>
+											
+												<li class=""><a href="javascript:;" onclick="javascript:melon.play.playSong('68030101','31296960');" title="달이 참 예쁘다고 재생 - 새 창" class="btn_play_song"> <span class="icon_play">곡재생</span> <span class="songname11">달이 참 예쁘다고</span></a></li>
+											</ul>
+										</div>
+										<span class="box_arrow"></span>
+									</dd>
+									<dd class="wrap_btn">
+										<button type="button" title="이승윤 팬맺기" data-artist-no="723192" data-artist-menuId="68030101" class="btn_join_fan"><span class="odd_span">팬맺기</span></button>
+										<span class="cnt_fan"><span class="cnt_span">0</span></span>
+									</dd>
+								</dl>
+							</div> <!-- //좋아요 1위 아티스트 -->
+						</li>
+						
+						
+						
+					
+				
+						
+						
+						
+						
+						<li class="">
+							<!-- 포토 1위 아티스트 -->
+							<div class="photo_rank_top">
+								<div class="title_wrap"><h4>포토 1위 아티스트</h4></div>
+								<dl class="update_artist_cntt">
+									<dt><a href="javascript:melon.link.goArtistDetail('723192');" title="이승윤" class="ellipsis">이승윤</a></dt>
+									<dd class="thumb">
+										<a href="javascript:melon.link.goArtistDetail('723192');" title="이승윤">
+											<span class="thumb_frame"></span>
+											<img onerror="WEBPOCIMG.defaultArtistImg(this);" width="64" height="64" src="https://cdnimg.melon.co.kr/cm2/artistcrop/images/007/23/192/723192_20211124141729_500.jpg/melon/resize/64/quality/80/optimize" alt=""/>
+										</a>
+									</dd>
+									<dd class="content">
+										<div class="wrap_cntt">
+											<p><span>인기 포토</span></p>
+											<ul>
+												<li class="first_child">
+													<a href="javascript:melon.link.goPhotoBtmDetail('723192','72319201');" class="thumb" title="이승윤">
+														<img data-imgpath="/cm/photo/images/000/723/19/201/72319201.jpg" onerror="WEBPOCIMG.defaultPhotoImg(this);" width="104" height="104" src="https://cdnimg.melon.co.kr/cm/photo/images/000/723/19/201/72319201_700.jpg/melon/resize/112/quality/80/optimize" alt=""/>
+													</a>
+												</li>
+											
+												<li class="">
+													<a href="javascript:melon.link.goPhotoBtmDetail('723192','80132326');" class="thumb" title="이승윤">
+														<img data-imgpath="/cm2/photo/images/000/801/32/326/80132326_20210415164409.jpg" onerror="WEBPOCIMG.defaultPhotoImg(this);" width="104" height="104" src="https://cdnimg.melon.co.kr/cm2/photo/images/000/801/32/326/80132326_20210415164409_700.jpg/melon/resize/112/quality/80/optimize" alt=""/>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<span class="box_arrow"></span>
+									</dd>
+									<dd class="wrap_btn">
+										<button type="button" title="이승윤 팬맺기" data-artist-no="723192" data-artist-menuId="68030101" class="btn_join_fan"><span class="odd_span">팬맺기</span></button>
+										<span class="cnt_fan"><span class="cnt_span">0</span></span>
+									</dd>
+								</dl>
+							</div>
+							<!-- //포토 1위 아티스트 -->
+						</li>
+						
+						
+					
+				
+						
+						
+						
+						
+						
+						<li class="">
+							<!-- 비디오 1위 아티스트 -->
+							<div class="movie_rank_top">
+								<div class="title_wrap"><h4>비디오 1위 아티스트</h4></div>
+								<dl class="update_artist_cntt">
+									<dt><a href="javascript:melon.link.goArtistDetail('672375');" title="방탄소년단" class="ellipsis">방탄소년단</a></dt>
+									<dd class="thumb">
+										<a href="javascript:melon.link.goArtistDetail('672375');" title="방탄소년단">
+											<span class="thumb_frame"></span>
+											<img onerror="WEBPOCIMG.defaultArtistImg(this);" width="64" height="64" src="https://cdnimg.melon.co.kr/cm2/artistcrop/images/006/72/375/672375_20210709105209_500.jpg/melon/resize/64/quality/80/optimize" alt=""/>
+										</a>
+									</dd>
+									<dd class="content">
+										<div class="wrap_cntt">
+											<p><span>인기 비디오</span></p>
+											<div class="mov_wrap">
+												<a href="javascript:melon.link.goMvDetail('68030101', '50243763', 'video', 'MV0013')" title="[MMA2021] 레전드 무대 댓글 모음 재생" class="thumb">
+													<img onerror="WEBPOCIMG.defaultMvImg(this);" width="215" height="121" src="https://cdnimg.melon.co.kr/cm2/mv/images/wide/502/43/763/50243763_20211126110854_640.jpg/melon/resize/240/quality/80/optimize" alt=""/>
+													<span class="playtime">
+														<strong class="none">재생시간</strong>
+														<span class="time">1:02:44</span>
+													</span>
+												</a>
+												<strong class="movie_title"><a href="javascript:melon.link.goMvDetail('68030101', '50243763', 'video', 'MV0013')">[MMA2021] 레전드 무대 댓글 모음</a></strong>
+											</div>
+										</div>
+										<span class="box_arrow"></span>
+									</dd>
+									<dd class="wrap_btn">
+										<button type="button" title="방탄소년단 팬맺기" data-artist-no="672375" data-artist-menuId="68030101" class="btn_join_fan"><span class="odd_span">팬맺기</span></button>
+										<span class="cnt_fan"><span class="cnt_span">0</span></span>
+									</dd>
+								</dl>
+							</div> <!-- //영상 1위 아티스트 -->
+						</li>
+						
+					
+				</ul>
+			</div>
+			<!-- ▲▲▲ 오른쪽 컨텐츠 ▲▲▲ -->
+		</div>
+		<!-- ▲▲▲contents▲▲▲ -->
+
+	<script type="text/javascript">
+		var httpWww = "http://www.melon.com";
+		var httpsWww = "https://www.melon.com";
+		var POC_ID = "XXXX";
+		var deployPhase = "";
+	</script>
+
+	
+	<script type="text/javascript" src="/resource/script/web/common/melonweb_openlib.js"></script>
+
+	<script type="text/javascript" src="https://cdnimg.melon.co.kr/static/web/resource/script/w1/jl/7/mt2yrkjrg8wadm0bh.js"></script>
+	<script type="text/javascript" src="https://cdnimg.melon.co.kr/static/web/resource/script/w1/jy/q/rr857cdi5vvqoqd.js"></script>
+	<script type="text/javascript" src="/resource/script/web/common/MPAPI.js?tm=20171129"></script> 
+	<script type="text/javascript" src="https://cdnimg.melon.co.kr/static/web/resource/script/w1/9w/p/kzexcify1v4k.js"></script>
+	
+
+<script type="text/javascript" src="https://cdnimg.melon.co.kr/static/web/resource/script/w1/0i/p/1ec0iixwb57.js"></script>
+
+	<script type="text/javascript" src="/resource/script/web/chart/json2.js"></script>
+	<script type="text/javascript" src="/resource/script/web/common/melonweb_zam.js?tm=2016042816"></script>
+	<script type="text/javascript" src="https://cdnimg.melon.co.kr/static/web/resource/script/w1/8k/8/1ed5h822hvv.js"></script>
+	<script type="text/javascript" src="https://cdnimg.melon.co.kr/statistics/js/mlog.js"></script>
+	<script type="text/javascript" src="//t1.daumcdn.net/tiara/js/v1/tiara.min.js"></script>
+	<script type="text/javascript" src="/resource/script/web/event/bluebird.min.js"></script>
+	<script type="text/javascript" src="/resource/script/web/common/melonweb_newtiara.js?tm=1623820031532"></script>
+	<script type="text/javascript" src="/resource/script/web/clean/melonweb_clean.js?tm=20210914"></script>
+
+
+	<script type="text/javascript">
+		var melon = MELON.WEBSVC.POC;
+		var menuId = '68030101';
+		if(menuId != null && menuId != ''){
+			tiara.sendLog(menuId);
+		}
+
+		document.domain="melon.com";
+
+		//pocId 쿠키설정 실행
+		try {
+			melon.setPocId();
+		} catch (e){}
+	</script>
+	
+	<script type="text/javascript" src="/resource/script/web/common/socket.io.js"></script>
+
+<script type="text/javascript" src="/resource/script/web/common/highcharts_v4.0.4.js"></script>
+<script type="text/javascript">
+$(function() {
+	var chartGubunCode = "MS0000";
+	var WEBSVC = MELON.WEBSVC,
+		addComma = WEBSVC.number.addComma;
+
+	var weekChartCategories = [],
+		weekChartseries = [],
+		wrapCnttseries = [],
+		wrapCnttChartAverage = 0,
+		labelStyle = {enabled : true,style: {color: '#7aa64d'}},
+		numberUtil = WEBSVC.number;
+
+	/* ********************************************************************************
+	* 지난 일주일간 순위 1-50위
+	******************************************************************************** */
+	weekChartCategories = ['11.21','11.22','11.23','11.24','11.25','11.26','11.27'];
+	weekChartseries = makeRaking(0);
+
+	var weekData = [];
+
+	function weekChartShow(thisIdx) {
+		var thisIdx = thisIdx,
+			itemLen = $('.wrap_list_artistplus .artistplus_li').length;
+
+		var weekChartSet = setInterval(function() {
+			if (thisIdx == itemLen - 5) {
+				clearInterval(weekChartSet);
+			};
+
+			for (var i = thisIdx; i < thisIdx + 5; i++) {
+				$('.artistplus_li').eq(i).find('.chart').highcharts({
+					chart: {
+						height: 82,
+						marginLeft: 0,
+						marginTop: 10,
+						marginRight: 0,
+						marginBottom: 0,
+						backgroundColor: false,
+						plotBackgroundImage:'//cdnimg.melon.co.kr/resource/image/web/artistplus/bg_chart1.png'
+					},
+					title: {
+						text: ''
+					},
+					xAxis: {
+						categories: weekChartCategories,
+						labels: {
+							enabled: false
+						},
+						lineColor: '#000000',
+						lineWidth:0,
+						gridLine : false,
+						gridLineWidth: 0,
+						tickWidth: 0
+					},
+					yAxis: {
+						max: 50,
+						min:0,
+						reversed: true,
+						gridLineWidth: 0
+					},
+					tooltip: {
+						borderColor: '#d2d2d2',
+						formatter: function() {
+							var s = this.x;
+							if(this.y == 101) {
+								s += ' <span style="padding-left:10px; font-weight:bold; color:#333333;"></span>'
+							} else {
+								s += ' <span style="padding-left:10px; font-weight:bold; color:#333333;">'+ this.y + '위' + '</span>'
+							}
+							return s;
+						},
+						style: {
+							fontColor: '#666666',
+							fontSize: '11px'
+						},
+						snap: 5
+					},
+					plotOptions: {
+						line: {
+							allowPointSelect: false,
+							marker: {
+								fillColor: '#7aa64d',
+								radius: 3.5
+							},
+							lineColor: '#7aa64d',
+							lineWidth: 1,
+							states: {
+								hover: {
+									enabled: false
+								}
+							}
+						}
+					},
+					legend: {
+						enabled: false
+					},
+					title: {
+						text: false
+					},
+					credits: {
+						enabled: false
+					},
+					states: {
+						hover: {
+							enabled: false
+						}
+					},
+					series: weekChartseries[i]
+				});
+
+				var weekChart = $('.artistplus_li').eq(i).find('.chart').highcharts();
+				for (var j = 0; j < 7 ; j++) {
+					if (weekChart.series[0].data[j].y > 50) {
+						if (weekChart.series[0].data[j+1].y <= 50) {
+							if ($('.artistplus_li').eq(i).find('.chart_new').length < 1) {
+								$('.artistplus_li').eq(i).find('.chart').prepend(
+									'<div class="chart_new" style=\"position:absolute; top:58px; left:'+ (30*j) +'px; font-size:12px; color:#7aa64d; z-index:1;\">진입</div>'
+								);
+							};
+						};
+					};
+				};//end-for
+			}; //end-for
+
+			return thisIdx +=5;
+		},500); //end-weekChartSet
+	}
+
+	setTimeout(function() {
+		weekChartShow(0);
+	},500);
+
+
+	/* ********************************************************************************
+	* 더보기-아티스트 랭킹(11-50위)
+	******************************************************************************** */
+	$(document).on('click', '.btn_full', function(){
+		var btn = $(this),
+			itemLen = $('.wrap_list_artistplus .artistplus_li').length;
+
+		var $dlg = $('.wrap_list_artistplus .artistplus_li').last();
+		var pageIndex = parseInt($dlg.attr("data-page-index"));
+
+		$.ajax({
+				url: "/artistplus/artistchart/artistchartTotal.htm"
+			,	data : {chartGubunCode : chartGubunCode, pageIndex : pageIndex}
+			,	dataType: 'html'
+		}).done(function(html){
+			//$('.wrap_list_artistplus ul').append($(html).children()).show();
+			if (itemLen > 30) {
+				btn.hide();
+			};
+
+			$('.wrap_list_artistplus ul').append(html).show();
+			//$('.wrap_list_artistplus ul').append($(html).children().eq(i)).show();
+			var weekData = makeRaking(pageIndex);
+			jQuery.merge( weekChartseries, weekData )
+			weekChartShow(itemLen);
+
+			//$('.wrap_list_artistplus ul').append(html).show();
+			//btn.hide();
+			getArtistFanLike();
+		});
+		if(pageIndex > 4) $(".btn_full").hide(); //50위까지만 더보기 버튼
+	});
+
+
+	/* ********************************************************************************
+	* 일주일간 팬수 변화 : 팬급상수 1위 아티스트
+	******************************************************************************** */
+	wrapCnttseries = [{name: 'BE&#39;O (비오)',data: [16787,17616,18231,18774,19284,19709,20799]}];
+
+	for (var i = 0; i < 7; i++) {
+		wrapCnttChartAverage += wrapCnttseries[0].data[i];
+	};
+
+	setTimeout(function() {
+		$('.wrap_cntt .chart').highcharts({
+			chart: {
+				height: 68,
+				marginLeft: 0,
+				marginTop: 10,
+				marginRight: 0,
+				marginBottom: 0,
+				backgroundColor: false,
+				plotBackgroundImage: '//cdnimg.melon.co.kr/resource/image/web/artistplus/bg_chart2.png'
+			},
+			title: {
+				text: ''
+			},
+			xAxis: {
+				categories: weekChartCategories,
+				labels: {
+					enabled: false
+				},
+				lineColor: '#000000',
+				lineWidth:0,
+				gridLine : false,
+				gridLineWidth: 0,
+				tickWidth: 0
+			},
+			yAxis: {
+				gridLineWidth: 0
+				/* 140408_삭제
+				plotLines : [{
+					value: parseInt(wrapCnttChartAverage/7),
+					color : '#d9d9d9',
+					dashStyle : 'shortdash',
+					width : 1
+				}]
+				*/
+			},
+			tooltip: {
+				borderColor: '#d2d2d2',
+				//140409_수정
+				formatter: function() {
+					var s = this.x,
+						n = this.y,
+						reg = /(^[+-]?\d+)(\d{3})/;
+					n += '';
+					while (reg.test(n))
+					n = n.replace(reg, '$1' + ',' + '$2');
+					s += ' <br /><span style="padding-left:10px; font-weight:bold; color:#333333;">'+ n + '명' + '</span>'
+					return s;
+				},
+				style: {
+					fontColor: '#666666',
+					fontSize: '11px'
+				},
+				snap: 5
+			},
+			plotOptions: {
+				line: {
+					allowPointSelect: false,
+					marker: {
+						fillColor: '#ffad02',
+						radius: 3.5
+					},
+					lineColor: '#ffad02',
+					lineWidth: 1,
+					states: {
+						hover: {
+							enabled: false
+						}
+					}
+				}
+			},
+			legend: {
+				enabled: false
+			},
+			title: {
+				text: false
+			},
+			credits: {
+				enabled: false
+			},
+			states: {
+				hover: {
+					enabled: false
+				}
+			},
+			series: wrapCnttseries
+		});
+	},500);
+
+
+	/* ********************************************************************************
+	* 아티스트 점유율
+	******************************************************************************** */
+	$('.artist_chart .chart_cntt').highcharts({
+		chart: {
+			plotBackgroundColor: false,
+			backgroundColor: '#fcfdfd',
+			plotBorderWidth: null,
+			plotShadow: false,
+			events: {
+				load: function(event) {
+					$('.artist_chart p.artist').eq(0).show();
+					for (var i = 0; i < 6; i++) {
+						$('.wrap_artist_chart p.artist').eq(i).find('strong > span').text(Math.round(this.series[0].data[i].percentage));
+						$('.wrap_artist_chart p.artist').eq(i).find('em').text(this.series[0].data[i].name);
+					};
+				}
+			}
+		},
+		title: {
+			text: false
+		},
+
+		credits: {
+			enabled: false
+		},
+
+		plotOptions: {
+			pie: {
+				allowPointSelect: false,
+				slicedOffset: 10,
+				borderWidth: 0,
+				size: 145,
+				center: [60, 60],
+				data: [
+					{
+						name: 'BE&#39;O (비오)',
+						y: 12,
+						sliced: true,
+						selected: true,
+						color: "#fe7474",
+						dataLabels: {
+							color: "#fe7474"
+						}
+					},
+					{
+						name: '임영웅',
+						y: 11,
+						sliced: false,
+						selected: false,
+						color: "#45e5c3",
+						dataLabels: {
+							color: "#45e5c3"
+						}
+					},
+					{
+						name: '이승윤',
+						y: 11,
+						sliced: false,
+						selected: false,
+						color: "#59bff0",
+						dataLabels: {
+							color: "#59bff0"
+						}
+					},
+					{
+						name: 'sokodomo',
+						y: 10,
+						sliced: false,
+						selected: false,
+						color: "#ab85f2",
+						dataLabels: {
+							color: "#ab85f2"
+						}
+					},
+					{
+						name: '베이식 (Basick)',
+						y: 10,
+						sliced: false,
+						selected: false,
+						color: "#ffc017",
+						dataLabels: {
+							color: "#ffc017"
+						}
+					},
+					{
+						name: '기타',
+						y: 46,
+						sliced: false,
+						selected: false,
+						color: "#e5e7e4",
+						dataLabels: {
+							enabled: false
+						}
+					}
+				]
+
+			}
+		},
+		series: [
+			{
+				type: 'pie',
+				enableMouseTracking: false,
+				dataLabels: {
+					enabled: false,
+					softConnector: false,
+					connectorWidth:0,
+					verticalAlign:'top',
+					distance: 10,
+					formatter: function () {
+						if(this.percentage!=0)  return Math.round(this.percentage)  + '%';
+					},
+					style: {
+						fontSize: "14px",
+						fontWeight: "bold"
+					}
+				}
+			}
+		]
+	});
+
+	var chartS = $('.artist_chart .chart_cntt').highcharts();
+
+	$('.artist_list li').each(function (index) {
+		var liIndex = index;
+		$(this).on('mouseover',function () {
+			$('.artist_list li').removeClass('mhover');
+			$(this).addClass('mhover');
+		});
+		$(this).on('mouseout',function () {
+			$(this).removeClass('mhover');
+		});
+		$(this).on('mousedown',function () {
+			$(this).addClass('mactive');
+		});
+		$(this).on('mouseup',function () {
+			$('.artist_list li').removeClass('mactive');
+		});
+		$(this).on('click',function(){
+			$('.artist_list li').removeClass('on');
+			$(this).addClass('on');
+			for (var i = chartS.series[0].data.length - 1; i >= 0; i--) {
+				chartS.series[0].data[i].update({
+					sliced : false,
+					selected : false
+				});
+			};
+			chartS.series[0].data[liIndex].update({
+				sliced : true,
+				selected : true
+			});
+			$(this).parents('.wrap_artist_chart').find('p.artist').eq(liIndex).show().siblings('p.artist').hide();
+			$(this).parents('.wrap_artist_chart').find('.graph').eq(liIndex).show().siblings('.graph').hide();
+		});
+	});
+
+
+
+	/* ********************************************************************************
+	* 전체|남자그룹|여자그룹|혼성그룹|남자솔로|여자솔로|인지
+	******************************************************************************** */
+	//$('li.tab_li02').on('click', function(e){
+	//$(document).on('click', 'li.tab_li02', function(e){
+		//var $me = $(this);
+		//chartGubunCode = $me.children().attr('data-chart-code');
+		//location.href = "/artistplus/artistchart/index.htm?chartGubunCode="+chartGubunCode;
+		//$me.activeRow('on');
+		/*
+		e.preventDefault();
+		var type = "paging";
+		$.ajax({url: "/artistplus/artistchart/artistchartTotal.htm"
+			,	data : {chartGubunCode : chartGubunCode, pageIndex : 1 }
+		}).done(function(html){
+			$('.wrap_list_artistplus ul').empty();
+			$('.wrap_list_artistplus ul').html(html);
+			$(".btn_full").show();
+			weekChartseries = makeRaking(0);
+			chartClick();
+			getArtistFanLike();
+		});
+		*/
+	//});
+
+
+	/* ********************************************************************************
+	* 팬여부 체크값 Ajax로 가져오기
+	******************************************************************************** */
+	function getArtistFanLike() {
+		var likeArtistId = $("button.btn_join_fan").map(function() {
+			return $(this).attr('data-artist-no');
+		}).get().join(',');
+		$.ajax({
+			type : "POST",
+			url  : "/commonlike/getArtistFan.json",
+			data : ({contsIds : likeArtistId}),
+			async : false,
+			success : function(result) {
+				var listLike = result.contsFan;
+				if(listLike == null) return;
+				for(var i=0; i<listLike.length; i++) {
+					//$("button[name=likeFan_"+listLike[i].CONTSID+"]").next().html('<span class="cnt_span">'+(listLike[i].SUMMCNT > 999999 ? '999,999+' : setComma(listLike[i].SUMMCNT))+'</span>');
+					//$("dd[data-fan-cnt='"+listLike[i].CONTSID+"']").html("팬 "+addComma(listLike[i].SUMMCNT)+"명");
+					$("button[data-artist-no='"+listLike[i].CONTSID+"']").next('span.cnt_fan').html('<span class="cnt_span">'+(listLike[i].SUMMCNT > 999999 ? '999,999+' : addComma(listLike[i].SUMMCNT))+'</span>')
+					if(listLike[i].LIKEYN == "Y") {
+						$("button[data-artist-no='"+listLike[i].CONTSID+"']:not(:disabled)").prop('disabled', true).addClass('on disabled').attr('title', '팬입니다.');
+					} else {
+						$("button[data-artist-no='"+listLike[i].CONTSID+"']").addClass("btn_join_fan");
+					}
+				}
+			}
+		});
+	}
+
+	WEBSVC.ArtistList.init();  // 팬맺기
+	getArtistFanLike();
+
+
+	/* ********************************************************************************
+	* 차트 순위 DATA 배열 만들기
+	******************************************************************************** */
+	function makeRaking(rankValue) {
+		var loop = rankValue == 0 ? 10 : parseInt(rankValue)*10;
+		var ranking = rankValue*10;
+		var tempName = $("div.dataRankProgs").map(function() {
+			return "'"+$(this).attr('data-artistName')+"'";
+		}).get().join('&&');
+		var nameArr = tempName.split("&&");
+
+		var tempRank = $("div.dataRankProgs").map(function() {
+			return $(this).attr('data-chart-weekRank');
+		}).get().join('&&');
+		var rankArr = tempRank.split("&&");
+
+		var weekProgsData = [];
+		var intList = new Array(7);
+		var strList = new Array(7);
+		var sortList = new Array(7);
+		var maxVal = 0;
+		var minVal = 0;
+		var maxFlag = true;
+		var minFlag = true;
+
+		for (var i = 0 ; i < 10; i++) {
+
+			sortList = rankArr[i+ranking].split(",");
+			sortList.sort(function(a,b) { return a-b });
+			strList = rankArr[i+ranking].split(",");
+
+
+			minVal = sortList[0];
+			maxVal = getMaxValue(strList, minVal);
+
+			for(var n=0; n<7; n++) {
+				if(minFlag && parseInt(strList[n]) == minVal) {
+					intList[n] = {y : parseInt(strList[n]),dataLabels : labelStyle}
+					minFlag = false;
+				} else if(maxFlag && parseInt(strList[n]) == maxVal) {
+					intList[n] = {y : parseInt(strList[n]),dataLabels : labelStyle}
+					maxFlag = false;
+				} else {
+					intList[n] = parseInt(strList[n]);
+				}
+				//intList[n] = parseInt(strList[n]);
+			}
+			//console.log(intList);
+			weekProgsData[i] = [{name:nameArr[i+ranking], data: intList}];
+
+			intList = [];
+			sortList = [];
+			maxFlag = true;
+			minFlag = true;
+		}
+		return weekProgsData;
+	}
+
+	/* ********************************************************************************
+	* 최대값(차트에 뿌려줄 최대값 51미만에서 그래프가 100위로 바뀌면 101로 변경하기)
+	******************************************************************************** */
+	function getMaxValue(strList, minVal) {
+		var max = minVal;
+		for(var i=0; i<7; i++) {
+			if(parseInt(strList[i]) < 51 && parseInt(strList[i]) > max) {
+				max = parseInt(strList[i]);
+			}
+		}
+		return max;
+	}
+
+});
+</script>
+
+			<!-- //contents -->
+		</div>
+	</div>
+	<!-- footer -->
+	<div id="footer" class="my_fold">
+		<div class="btn_top_wrap">
+			<a href="#skip_nav" class="btn_top" title="맨 위로 가기" style=""><span>맨 위로 가기</span></a>
+		</div>
+
+		
+		<!-- MELONUIT-738 -->
+		<div id="popNotice" class="wrap_pop_notice MELONUIT-738">
+			<div class="pop_notice_inner">
+				<div class="bd">
+					<h1>공정거래위원회로부터 시정명령을 받은 사실의 공표</h1>
+					<div class="box">
+						<div class="wrap_notice">
+							<div class="info_cont">
+								<div class="txt01">
+									<p>저희 주식회사 카카오는 인터넷 사이트 (www.melon.com) 및 스마트 기기 전용 사이버몰인 ‘멜론(Melon)’ 앱을 운영하면서 아래와 같은 행위를 함으로써‘전자상거래 등에서의 소비자보호에 관한 법률’을 위반하였다는 이유로 공정거래위원회로부터 시정명령을 받았습니다.</p>
+									<p class="pgh center line">-&nbsp;&nbsp;&nbsp;아&nbsp;&nbsp;래&nbsp;&nbsp;&nbsp;-</p>
+									<p class="pgh" style="margin-top: 0;">1. 정기결제 상품 이용자들을 대상으로 2016. 9. 22. 부터 2016. 12. 31. 까지 4차례에 걸쳐‘가격인상 동의’프로모션을 진행하면서 가격인상에 미리 동의해야 할인 혜택 연장 등의 혜택을 받을 수 있고 가격인상에 동의하지 않을 경우에는 할인 혜택 연장을 받을 수 없는 것처럼 광고하고 실제로는 가격인상에 동의하지 않는 이용자들에게도 할인혜택을 지속적으로 제공함</p>
+									<p class="pgh">2. 2016. 9. 30. 부터 2017. 8. 31. 까지‘일시정지 해제’프로모션을 진행하면서 정기결제 상품이용자 중 이용량이 많다는 이유로 이용자의 이용권을 일시정지 시켰음에도 불구하고, 음원 이용이 일시정지 된 구체적인 사유를 이용자에게 알리지 않았고, 인상된 가격을 기준으로 할인혜택이 적용된다는 사실과 할인혜택이 종료된 이후에는 인상된 가격이 적용된다는 사실을 제대로 알리지 않음</p>
+									<p class="pgh center" style="margin-top: 10px;" id="d_layerPopDateText"></p>
+									<p class="pgh center company"><strong>주식회사 카카오<br />대표이사 여민수, 조수용</strong></p>
+								</div>
+							</div>
+						</div>
+						<div class="bg_top"></div>
+						<div class="bg_bottom"></div>
+					</div>
+					<div class="wrap_input_box">
+						
+							
+							
+						
+						<button type="button" class="d_close"><span>닫기</span></button>
+					</div>
+				</div>
+			</div>
+			<span class="shadow"></span>
+		</div>
+		<!-- //MELONUIT-738 -->
+
+		<div class="footer_cont">
+			<div class="footer_menu">
+<!-- 				<ul class="fl_left"> -->
+<!-- 					<li class="menu01 d_melon_ticket"><a href="http://ticket.melon.com/main/index.htm"><span>MelOn Ticket</span></a></li> -->
+
+<!-- 					<li class="menu04"><a href="http://aztweb.melon.com/aztalk/guide/web/main.htm"><span>aztalk</span></a></li> -->
+<!-- 				</ul> -->
+				<ul class="fl_right">
+					<!-- MELONUIT-1799 -->
+					<li class="menu05" id="d_melon6"><a href="//www.melon.com/m6/campaign.htm"><span>멜론6.0 둘러보기</span></a></li>
+					<!-- //MELONUIT-1799 -->
+					<li class="menu10"><a href="//studio.melon.com/"><span>멜론 스튜디오</span></a></li>
+					<li class="menu06"><a href="//www.melon.com/customer/serviceintro/index.htm"><span>Windows 플레이어</span></a></li><!-- 160824 수정 -->
+					<li class="menu07"><a href="//www.melon.com/customer/serviceintro/multi_pc_web.htm"><span>Mac 플레이어</span></a></li>
+					<li class="menu09"><a href="//www.melon.com/customer/serviceintro/ipad.htm"><span>iPad</span></a></li>
+					<li class="menu08"><a href="//faqs2.melon.com/customer/index.htm"><span>고객센터</span></a></li>
+				</ul>
+			</div>
+			<ul class="footer_policy clfix">
+			
+				<li class="first_child"><a href="//info.melon.com/terms/web/terms1_1.html" title="이용약관 " target="_blank">이용약관</a></li>
+				<li><a href="//info.melon.com/terms/web/terms1_3.html" title="위치기반서비스 이용약관 " target="_blank"><strong>위치기반서비스 이용약관</strong></a></li>
+				<li><a href="//info.melon.com/terms/web/terms3.html" title="개인정보처리방침 " target="_blank"><strong>개인정보처리방침</strong></a></li>
+				<li><a href="//info.melon.com/terms/web/terms5_1.html" title="청소년보호정책" target="_blank">청소년보호정책</a></li>
+				<li><a href="//faqs2.melon.com/customer/faq/informFaq.htm?no=1&faqId=QUES20140616000001&SEARCH_KEY=&SEARCH_PAR_CATEGORY=CATE20130909000006&SEARCH_CATEGORY=CATE20130909000021" title="제휴/프로모션문의">제휴/프로모션문의</a></li>
+				<li><a href="javascript:openEmailCollectionReject();" title="이메일주소무단수집거부 ">이메일주소무단수집거부</a></li>
+				<li class="last_child"><a href="//partner.melon.com/partrct/login/web/login_loginProcess.htm?t=s" title="파트너센터" target="_blank">파트너센터</a></li>
+			</ul>
+			<!--160531 수정 lyr-->
+
+			<p>
+				<span class="first"><strong>(주)카카오엔터테인먼트</strong>&nbsp;&nbsp;경기도 성남시 분당구 판교역로 221</span>
+				<span>대표이사 : 이진수, 김성수</span>
+				<span>사업자등록번호 : 220-88-02594</span>
+				<span>통신판매업신고번호 : 2018-성남분당B-0004 <a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=2208802594" title="사업자정보확인" class="btn_arrow" target="_blank">사업자정보확인</a></span>
+				<br />
+				<span class="first">문의전화 : 1566-7727 (평일 09:00-18:00, 유료)</span>
+				<span>이메일 : <a href="mailto:melon_info@kakaoent.com" class="btn_footer_mail">melon_info@kakaoent.com</a></span>
+				<span>호스팅서비스사업자 : (주)카카오엔터테인먼트</span>
+				<span><a href="//kakaoent.com" class="btn_footer_mail" target="_blank">© Kakao Entertainment Corp.</a></span>
+			</p>
+			<!--//160531 수정 lyr-->
+
+			<!--모바일 웹 버전, 태블릿에서만 적용됨. display none, block 으로 적용-->
+			<!--140602 추가 lyr-->
+			<div class="mobile_btn_wrap" style="display:none;">
+				<p>접속하신 단말/브라우저에서는 멜론 서비스의 사용이 일부 제한될 수 있습니다. 양해부탁드립니다.</p>
+				<a href="#" class="btn" title="모바일 웹 버전">
+					<span class="odd_span">
+						<span class="even_span">모바일 웹 버전</span>
+					</span>
+				</a>
+			</div>
+			<!--//140602 추가 lyr-->
+		</div>
+
+		<a href="#" class="btn_top" title="맨 위로 가기" style="display: none;">맨 위로 가기</a>
+
+<!-- MELONUIT-1148 20200121 ISMS 인증서 팝업 -->
+<div id="pop_isms" class="wrap_pop_notice wrap_pop_isms">
+	<div class="pop_isms_inner">
+		<h1 class="title">정보보호 및 개인정보보호 관리체계 인증</h1>
+		<div class="cntt">
+			<p class="txt01">정보보호 및 개인정보보호를 위한 일련의 조치와 활동이<br/>인증기준에 적합함을 인터넷진흥원 또는 인증기간이 증명하는 제도</p>
+			<ul class="list_isms">
+				<li>[인증범위]  인터넷 서비스 운영 (카카오, 다음, 멜론)</li>
+				<li>[유효기간]  2019.12.26 ~ 2022.12.25</li>
+			</ul>
+		</div>
+	</div>
+	<button type="button" title="닫기" class="btn_close d_close"><span>닫기</span></button>
+	<span class="shadow"></span>
+</div>
+<!-- //MELONUIT-1148 20200121 ISMS 인증서 팝업 -->
+
+		<script type="text/javascript">
+
+			$(function() {
+				//favicon 분기 처리
+				var pocId = MELON.WEBSVC.POC.getPocId();
+				if('AS20' == pocId || 'HT10' == pocId){
+					$('link#favicon').attr('href','//cdnimg.melon.co.kr/resource/mobile40/cds/common/image/favicon.ico');
+					$('title').text('Melon');
+				}else if('IS20' == pocId || 'IT10' == pocId){
+					$('link#favicon').attr('type','');
+					$('link#favicon').attr('rel','apple-touch-icon-precomposed');
+					$('link#favicon').attr('href','//cdnimg.melon.co.kr/resource/mobile40/cds/common/image/mobile_apple_120x120.png');
+					$('link#favicon').after('<link rel="apple-touch-icon-precomposed" sizes="180x180" href="//cdnimg.melon.co.kr/resource/mobile40/cds/common/image/mobile_apple_180x180.png" />');
+					$('title').text('Melon');
+				}
+
+
+				// 엣지 브라우저이고 해당 팝업이 뜬 적이 없는 경우 체크하여 팝업을 띄운다.
+				var isEdge = (navigator.userAgent.indexOf("Edge") > 0);
+				var edgeCheckYN = getCookie("EDGE_CHECK") != 'Y';
+
+
+				// 타블렛이고 해당 팝업이 뜬 적이 없는 경우 체크하여 팝업을 띄운다.
+				var tabletCheckYN = getCookie("TABLET_CHECK") != 'Y';
+
+				if(melon.isTablet() && tabletCheckYN){
+					window.open('//www.melon.com/error_page/error_tabletTypeA.html','tabletPopTypeA','scrollbars=no, resizable=no, location=no, width=560, height=483');
+				}
+
+				// 해당 쿠키가 존재하면 쿠키 삭제
+				if(getCookie("CHECK_POP") != ''){
+					// 체크 후 해당 쿠키는 제거
+					var expireDate = new Date();
+					expireDate.setDate(expireDate.getDate()-1);
+					document.cookie = "CHECK_POP=;path=/;expires="+expireDate.toGMTString()+";domain=.melon.com";
+				}
+
+				if(isMelonLogin()){
+					var djYn = getMemberDjYn();
+					if(djYn == "" || typeof djYn == "undefined"){
+						try {
+							$.ajax({
+								url: "/gnb/check_melondj.json",
+								type : 'GET',
+								dataType: 'jsonp',
+								jsonp: 'jscallback',
+							}).done(function(json) {}).fail(function() {});
+						} catch(e){}
+					}
+				}
+
+				// 홈탭의 경우 쇼핑/티켓을 새창띄우기로 변경한다.
+				var fromMPS = getCookie("MPS"); // 멜론 플레이어에서 왔는지 확인.
+				var fromHomeTab = !(fromMPS == null || fromMPS.indexOf("MELONPLAYER") < 0);
+
+				if(fromHomeTab){
+					$("li.d_melon_shopping a").removeClass("mlog");
+					$("li.d_melon_shopping a").addClass("mlog_without_page_change");
+					$("li.d_melon_shopping a").attr("target", "_blank");
+
+					$("li.d_melon_ticket a").removeClass("mlog");
+					$("li.d_melon_ticket a").addClass("mlog_without_page_change");
+					$("li.d_melon_ticket a").attr("target", "_blank");
+				}
+
+				//멜론 플레이어면 멜론 6.0 둘러보기 버튼 제거
+				if(fromHomeTab){
+					$('#d_melon6').hide();
+				}else{
+					$('#d_melon6').show();
+				}
+
+				$(document).on('limitpopup', function( e, cookieId ) {
+					$('#'+cookieId).modal();
+				});
+
+
+				//레이어 공지 제어
+				//메인만 적용
+				//pcp 홈탭 미적용
+				if('10010101' == '68030101' && !fromHomeTab){
+					$.ajax({
+						type : 'GET'
+						,url : '/main/getTicketPositionProperty.json'
+					}).done(function(response) {
+
+						var layerPopNotiYn = response.layerPopNotiYn;
+						var layerPopDateText = response.layerPopDateText;
+						if(layerPopNotiYn == 'Y'){
+							$('#d_layerPopDateText').text(layerPopDateText);
+							setTimeout(function() {
+								$("#popNotice").timeLimitSet({ cookieId:'popNotice',selectors:{closebtn:'#todayChk', checkbox:''} });
+							},1);
+							MELON.PBPGN.TimeLimitPopup.init({ cookieId:"popNotice", serverTime: new Date(), limitType:"day" });
+							$("#popNotice .d_close").click(function() {  $("#popNotice").modal('hide'); });
+						}
+					});
+				}
+			});
+
+			function goMelonTPage(){
+				//t.com 종료 삭제처리
+			}
+
+			function openEmailCollectionReject(){
+				window.open('//www.melon.com/emailCollectionReject.html','emailCollect', 'scrollbars=no, resizable=no, location=no, width=384, height=331');
+			}
+
+			//MELONUIT-1148 20200121 ISMS 인증서 팝업 //
+			var popISMS = {
+				open : function() {
+					$('#pop_isms').modal('show');
+				}
+			};
+
+			$(document).on('click', '.popISMS',function(){
+				popISMS.open();
+			});
+			//MELONUIT-1148 20200121 ISMS 인증서 팝업 //
+		</script>
+		<!--//140602 추가 lyr-->
+
+	</div>
+	<!-- //footer -->
+</div>
+</body>
+</html>
